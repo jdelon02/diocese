@@ -34,7 +34,7 @@
         "drupal/menu_block": "^1.5",
         "drupal/migrate_plus": "^4.1",
         "drupal/migrate_tools": "^4.1",
-        "drupal/migrate_upgrade": "^3.0",
+        "drupal/migrate_upgrade": "^3",
         "drupal/module_filter": "^3.1",
         "drupal/paragraphs": "^1.5",
         "drupal/pathauto": "^1.3",
