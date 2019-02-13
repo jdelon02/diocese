@@ -1,0 +1,14 @@
+uuid: 4068f745-d8a4-4a29-a2d1-b24667661427
+name: diocese
+mail: jdelong@backofficethinking.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
