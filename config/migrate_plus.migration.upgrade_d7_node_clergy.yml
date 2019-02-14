@@ -1,0 +1,124 @@
+uuid: 2c620f88-e937-4b1b-a84c-0d7728ecf70f
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_clergy
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Clergy (rename to Person after content migration))'
+source:
+  plugin: d7_node
+  node_type: clergy
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_clergy/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_church:
+    -
+      plugin: get
+      source: field_church
+  field_clergy_attributes:
+    -
+      plugin: get
+      source: field_clergy_attributes
+  field_clergy_home_address:
+    -
+      plugin: get
+      source: field_clergy_home_address
+  field_clergy_position:
+    -
+      plugin: get
+      source: field_clergy_position
+  field_headshot:
+    -
+      plugin: sub_process
+      source: field_headshot
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_name:
+    -
+      plugin: get
+      source: field_name
+  field_person_type:
+    -
+      plugin: sub_process
+      source: field_person_type
+      process:
+        target_id: tid
+destination:
+  plugin: 'entity:node'
+  default_bundle: clergy
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

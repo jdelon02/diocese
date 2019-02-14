@@ -1,0 +1,148 @@
+uuid: 5e525dc1-cac2-49ad-ae1b-b34bd48cb813
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_event_community
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Community Event)'
+source:
+  plugin: d7_node
+  node_type: event_community
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_event_community/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_email:
+    -
+      plugin: sub_process
+      source: field_email
+      process:
+        value: email
+  field_event_loc_fill_in:
+    -
+      plugin: get
+      source: field_event_loc_fill_in
+  field_event_loc_select:
+    -
+      plugin: get
+      source: field_event_loc_select
+  field_event_date_time:
+    -
+      plugin: sub_process
+      source: field_event_date_time
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_deadline:
+    -
+      plugin: sub_process
+      source: field_deadline
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_main_image:
+    -
+      plugin: sub_process
+      source: field_main_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_main_image_caption:
+    -
+      plugin: get
+      source: field_main_image_caption
+  field_event_attachment:
+    -
+      plugin: sub_process
+      source: field_event_attachment
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_external_link:
+    -
+      plugin: field_link
+      source: field_external_link
+destination:
+  plugin: 'entity:node'
+  default_bundle: event_community
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance
