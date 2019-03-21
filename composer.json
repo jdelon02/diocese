@@ -133,7 +133,8 @@
                 ".htaccess",
                 "web.config"
             ]
-        }
+        },
+        "patches": {}
     },
     "config": {
         "optimize-autoloader": true,
