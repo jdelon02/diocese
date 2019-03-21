@@ -1,0 +1,6 @@
+name: diocese
+recipe: pantheon
+config:
+  framework: drupal8
+  site: diocese
+  id: 2aa0885c-4b94-4a7e-8dd4-d8a7423b1b83

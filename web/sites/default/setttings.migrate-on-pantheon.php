@@ -6,6 +6,7 @@ if (file_exists($secretsFile)) {
 }
 if (!empty($secrets['migrate_source_db__url'])) {
  $parsed_url = parse_url($secrets['migrate_source_db__url']);
+ echo $parsed_url . " = Parsed URL VARIABLE";
  if (!empty($parsed_url['port']) && !empty($parsed_url['host']) && !empty($parsed_url['pass'])) {
  $databases['drupal_7']['default'] = array (
    'database' => 'pantheon',
