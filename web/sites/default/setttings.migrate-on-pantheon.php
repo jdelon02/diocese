@@ -28,5 +28,6 @@ if (!empty($secrets['migrate_source_db__url'])) {
         );
 
         $databases['migrate']['default'] = $databases['upgrade']['default'];
+        $databases['drupal_7']['default'] = $databases['upgrade']['default'];
     }
 }
