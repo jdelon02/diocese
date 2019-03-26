@@ -17,7 +17,7 @@ if ($secrets == false) {
 if (!empty($secrets['migrate_source_db__url'])) {
     $parsed_url = parse_url($secrets['migrate_source_db__url']);
     if (!empty($parsed_url['port']) && !empty($parsed_url['host']) && !empty($parsed_url['pass'])) {
-        $databases['migrate']['default'] = array (
+        $databases['drupal_7']['default'] = array (
         'database' => 'pantheon',
         'username' => 'pantheon',
         'password' => $parsed_url['pass'],
@@ -25,7 +25,6 @@ if (!empty($secrets['migrate_source_db__url'])) {
         'port' => $parsed_url['port'],
         'driver' => 'mysql',
         'prefix' => '',
-        'collation' => 'utf8mb4_general_ci',
         );
     }
 }
