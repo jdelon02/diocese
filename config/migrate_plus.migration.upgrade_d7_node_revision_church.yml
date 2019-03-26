@@ -1,0 +1,153 @@
+uuid: 65e8b906-94c7-4f4b-b45e-229eeb9174d6
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_church
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Organization)'
+source:
+  plugin: d7_node_revision
+  node_type: church
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_church/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_main_image:
+    -
+      plugin: sub_process
+      source: field_main_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_church_address:
+    -
+      plugin: get
+      source: field_church_address
+  field_church_attributes:
+    -
+      plugin: get
+      source: field_church_attributes
+  field_clergy_transition_contact:
+    -
+      plugin: get
+      source: field_clergy_transition_contact
+  field_clergy_transition_position:
+    -
+      plugin: get
+      source: field_clergy_transition_position
+  field_clergy_transition_step:
+    -
+      plugin: get
+      source: field_clergy_transition_step
+  field_county:
+    -
+      plugin: get
+      source: field_county
+  field_district:
+    -
+      plugin: get
+      source: field_district
+  field_website:
+    -
+      plugin: field_link
+      source: field_website
+  field_resource_attachment:
+    -
+      plugin: sub_process
+      source: field_resource_attachment
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_organization_type:
+    -
+      plugin: sub_process
+      source: field_organization_type
+      process:
+        target_id: tid
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: church
+migration_dependencies:
+  required:
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_church
+    - upgrade_d7_node_clergy
+    - upgrade_d7_node_event
+    - upgrade_d7_node_event_community
+    - upgrade_d7_node_forum
+    - upgrade_d7_node_media
+    - upgrade_d7_node_page
+    - upgrade_d7_node_resource
+    - upgrade_d7_node_slide
+    - upgrade_d7_node_staff
+    - upgrade_d7_node_story
+    - upgrade_d7_node_webform
+  optional: {  }

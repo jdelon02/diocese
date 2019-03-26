@@ -1,0 +1,214 @@
+uuid: 8c0dc24c-10ac-4a77-88de-3ff735930e80
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_story
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Story)'
+source:
+  plugin: d7_node
+  node_type: story
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_story/0/status:
+    -
+      plugin: get
+      source: comment
+  taxonomy_vocabulary_1:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_1
+      process:
+        target_id: tid
+  taxonomyextra:
+    -
+      plugin: sub_process
+      source: taxonomyextra
+      process:
+        target_id: tid
+  body:
+    -
+      plugin: get
+      source: body
+  field_ddblock_expiration:
+    -
+      plugin: sub_process
+      source: field_ddblock_expiration
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_gallery_photo:
+    -
+      plugin: sub_process
+      source: field_gallery_photo
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_include_ddblocks:
+    -
+      plugin: get
+      source: field_include_ddblocks
+  field_kicker:
+    -
+      plugin: get
+      source: field_kicker
+  field_main_image:
+    -
+      plugin: sub_process
+      source: field_main_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_slide_title:
+    -
+      plugin: get
+      source: field_slide_title
+  field_external_link:
+    -
+      plugin: field_link
+      source: field_external_link
+  field_announcement:
+    -
+      plugin: get
+      source: field_announcement
+  field_announcement_expiration:
+    -
+      plugin: sub_process
+      source: field_announcement_expiration
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_hiring_church_org:
+    -
+      plugin: get
+      source: field_hiring_church_org
+  field_story_by:
+    -
+      plugin: get
+      source: field_story_by
+  field_video:
+    -
+      plugin: get
+      source: field_video
+  field_story_type:
+    -
+      plugin: sub_process
+      source: field_story_type
+      process:
+        target_id: tid
+  field_application_deadline:
+    -
+      plugin: sub_process
+      source: field_application_deadline
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_hiring_organization:
+    -
+      plugin: get
+      source: field_hiring_organization
+  field_email:
+    -
+      plugin: sub_process
+      source: field_email
+      process:
+        value: email
+  field_phone:
+    -
+      plugin: get
+      source: field_phone
+  field_clergy_transition_contact:
+    -
+      plugin: get
+      source: field_clergy_transition_contact
+  field_main_image_caption:
+    -
+      plugin: get
+      source: field_main_image_caption
+  field_custom_media_embed:
+    -
+      plugin: get
+      source: field_custom_media_embed
+destination:
+  plugin: 'entity:node'
+  default_bundle: story
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

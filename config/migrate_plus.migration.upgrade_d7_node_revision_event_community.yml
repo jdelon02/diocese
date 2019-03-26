@@ -1,0 +1,157 @@
+uuid: eb219cfc-3834-473c-93f5-1c143b6a8bc7
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_event_community
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Community Event)'
+source:
+  plugin: d7_node_revision
+  node_type: event_community
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_event_community/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_email:
+    -
+      plugin: sub_process
+      source: field_email
+      process:
+        value: email
+  field_event_loc_fill_in:
+    -
+      plugin: get
+      source: field_event_loc_fill_in
+  field_event_loc_select:
+    -
+      plugin: get
+      source: field_event_loc_select
+  field_event_date_time:
+    -
+      plugin: sub_process
+      source: field_event_date_time
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_deadline:
+    -
+      plugin: sub_process
+      source: field_deadline
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_main_image:
+    -
+      plugin: sub_process
+      source: field_main_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_main_image_caption:
+    -
+      plugin: get
+      source: field_main_image_caption
+  field_event_attachment:
+    -
+      plugin: sub_process
+      source: field_event_attachment
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_external_link:
+    -
+      plugin: field_link
+      source: field_external_link
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: event_community
+migration_dependencies:
+  required:
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_church
+    - upgrade_d7_node_clergy
+    - upgrade_d7_node_event
+    - upgrade_d7_node_event_community
+    - upgrade_d7_node_forum
+    - upgrade_d7_node_media
+    - upgrade_d7_node_page
+    - upgrade_d7_node_resource
+    - upgrade_d7_node_slide
+    - upgrade_d7_node_staff
+    - upgrade_d7_node_story
+    - upgrade_d7_node_webform
+  optional: {  }

@@ -1,0 +1,465 @@
+uuid: bd7927bc-9fab-4ce8-914d-60a75129b9cf
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_comment
+class: Drupal\comment\Plugin\migrate\D7Comment
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: Comments
+source:
+  plugin: d7_comment
+  constants:
+    entity_type: node
+process:
+  cid:
+    -
+      plugin: get
+      source: cid
+  pid:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_comment
+      source: pid
+  entity_id:
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_node_blog
+        - upgrade_d7_node_church
+        - upgrade_d7_node_clergy
+        - upgrade_d7_node_event
+        - upgrade_d7_node_event_community
+        - upgrade_d7_node_forum
+        - upgrade_d7_node_media
+        - upgrade_d7_node_page
+        - upgrade_d7_node_resource
+        - upgrade_d7_node_slide
+        - upgrade_d7_node_staff
+        - upgrade_d7_node_story
+        - upgrade_d7_node_webform
+      source: nid
+    -
+      plugin: skip_on_empty
+      method: row
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+  comment_type:
+    -
+      plugin: migration_lookup
+      source: node_type
+      migration: upgrade_d7_comment_type
+    -
+      plugin: skip_on_empty
+      method: row
+  langcode:
+    -
+      plugin: get
+      source: language
+  field_name:
+    -
+      plugin: get
+      source: field_name
+  subject:
+    -
+      plugin: get
+      source: subject
+  uid:
+    -
+      plugin: get
+      source: uid
+  name:
+    -
+      plugin: get
+      source: name
+  mail:
+    -
+      plugin: get
+      source: mail
+  homepage:
+    -
+      plugin: get
+      source: homepage
+  hostname:
+    -
+      plugin: get
+      source: hostname
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  status:
+    -
+      plugin: get
+      source: status
+  thread:
+    -
+      plugin: get
+      source: thread
+  comment_body:
+    -
+      plugin: get
+      source: comment_body
+  taxonomy_vocabulary_4:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_4
+      process:
+        target_id: tid
+  taxonomy_vocabulary_1:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_1
+      process:
+        target_id: tid
+  taxonomy_vocabulary_6:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_6
+      process:
+        target_id: tid
+  taxonomyextra:
+    -
+      plugin: sub_process
+      source: taxonomyextra
+      process:
+        target_id: tid
+  body:
+    -
+      plugin: get
+      source: body
+  taxonomy_forums:
+    -
+      plugin: sub_process
+      source: taxonomy_forums
+      process:
+        target_id: tid
+  field_blog_type:
+    -
+      plugin: get
+      source: field_blog_type
+  field_ddblock_expiration:
+    -
+      plugin: sub_process
+      source: field_ddblock_expiration
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_gallery_photo:
+    -
+      plugin: sub_process
+      source: field_gallery_photo
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_include_ddblocks:
+    -
+      plugin: get
+      source: field_include_ddblocks
+  field_kicker:
+    -
+      plugin: get
+      source: field_kicker
+  field_main_image:
+    -
+      plugin: sub_process
+      source: field_main_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_slide_title:
+    -
+      plugin: get
+      source: field_slide_title
+  field_church_address:
+    -
+      plugin: get
+      source: field_church_address
+  field_church_attributes:
+    -
+      plugin: get
+      source: field_church_attributes
+  field_clergy_transition_contact:
+    -
+      plugin: get
+      source: field_clergy_transition_contact
+  field_clergy_transition_position:
+    -
+      plugin: get
+      source: field_clergy_transition_position
+  field_clergy_transition_step:
+    -
+      plugin: get
+      source: field_clergy_transition_step
+  field_county:
+    -
+      plugin: get
+      source: field_county
+  field_district:
+    -
+      plugin: get
+      source: field_district
+  field_website:
+    -
+      plugin: field_link
+      source: field_website
+  field_church:
+    -
+      plugin: get
+      source: field_church
+  field_clergy_attributes:
+    -
+      plugin: get
+      source: field_clergy_attributes
+  field_clergy_home_address:
+    -
+      plugin: get
+      source: field_clergy_home_address
+  field_clergy_position:
+    -
+      plugin: get
+      source: field_clergy_position
+  field_headshot:
+    -
+      plugin: sub_process
+      source: field_headshot
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_event_attachment:
+    -
+      plugin: sub_process
+      source: field_event_attachment
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_event_date_time:
+    -
+      plugin: sub_process
+      source: field_event_date_time
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_event_loc_fill_in:
+    -
+      plugin: get
+      source: field_event_loc_fill_in
+  field_event_loc_select:
+    -
+      plugin: get
+      source: field_event_loc_select
+  field_external_link:
+    -
+      plugin: field_link
+      source: field_external_link
+  field_email:
+    -
+      plugin: sub_process
+      source: field_email
+      process:
+        value: email
+  field_resource_date:
+    -
+      plugin: sub_process
+      source: field_resource_date
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_resource_type:
+    -
+      plugin: get
+      source: field_resource_type
+  field_sort_order:
+    -
+      plugin: get
+      source: field_sort_order
+  field_job_title:
+    -
+      plugin: get
+      source: field_job_title
+  field_oversight:
+    -
+      plugin: get
+      source: field_oversight
+  field_announcement:
+    -
+      plugin: get
+      source: field_announcement
+  field_announcement_expiration:
+    -
+      plugin: sub_process
+      source: field_announcement_expiration
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_hiring_church_org:
+    -
+      plugin: get
+      source: field_hiring_church_org
+  field_story_by:
+    -
+      plugin: get
+      source: field_story_by
+  field_phone:
+    -
+      plugin: get
+      source: field_phone
+  field_fax:
+    -
+      plugin: get
+      source: field_fax
+  field_resource_attachment:
+    -
+      plugin: sub_process
+      source: field_resource_attachment
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_main_image_caption:
+    -
+      plugin: get
+      source: field_main_image_caption
+  field_video:
+    -
+      plugin: get
+      source: field_video
+  field_background_image:
+    -
+      plugin: sub_process
+      source: field_background_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_story_type:
+    -
+      plugin: sub_process
+      source: field_story_type
+      process:
+        target_id: tid
+  field_person_type:
+    -
+      plugin: sub_process
+      source: field_person_type
+      process:
+        target_id: tid
+  field_organization_type:
+    -
+      plugin: sub_process
+      source: field_organization_type
+      process:
+        target_id: tid
+  field_application_deadline:
+    -
+      plugin: sub_process
+      source: field_application_deadline
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_hiring_organization:
+    -
+      plugin: get
+      source: field_hiring_organization
+  field_event_date_small:
+    -
+      plugin: get
+      source: field_event_date_small
+  field_deadline:
+    -
+      plugin: sub_process
+      source: field_deadline
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_custom_media_embed:
+    -
+      plugin: get
+      source: field_custom_media_embed
+destination:
+  plugin: 'entity:comment'
+migration_dependencies:
+  required:
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_church
+    - upgrade_d7_node_clergy
+    - upgrade_d7_node_event
+    - upgrade_d7_node_event_community
+    - upgrade_d7_node_forum
+    - upgrade_d7_node_media
+    - upgrade_d7_node_page
+    - upgrade_d7_node_resource
+    - upgrade_d7_node_slide
+    - upgrade_d7_node_staff
+    - upgrade_d7_node_story
+    - upgrade_d7_node_webform
+    - upgrade_d7_comment_type
+  optional:
+    - upgrade_d7_comment
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_church
+    - upgrade_d7_node_clergy
+    - upgrade_d7_node_event
+    - upgrade_d7_node_event_community
+    - upgrade_d7_node_forum
+    - upgrade_d7_node_media
+    - upgrade_d7_node_page
+    - upgrade_d7_node_resource
+    - upgrade_d7_node_slide
+    - upgrade_d7_node_staff
+    - upgrade_d7_node_story
+    - upgrade_d7_node_webform
+    - upgrade_d7_comment_type
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_church
+    - upgrade_d7_node_clergy
+    - upgrade_d7_node_event
+    - upgrade_d7_node_event_community
+    - upgrade_d7_node_forum
+    - upgrade_d7_node_media
+    - upgrade_d7_node_page
+    - upgrade_d7_node_resource
+    - upgrade_d7_node_slide
+    - upgrade_d7_node_staff
+    - upgrade_d7_node_story
+    - upgrade_d7_node_webform
