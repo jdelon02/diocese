@@ -22,13 +22,14 @@ export PANTHEON_D7_URL="http://$PANTHEON_D7_BRANCH-$PANTHEON_D7_SITE.pantheonsit
 terminus env:clear-cache  $SITE_ENV
 # terminus drush $SITE_ENV -- en -y migrate_plus migrate_tools migrate_upgrade
 terminus connection:set $SITE_ENV sftp
+terminus drush $SITE_ENV -- cache-rebuild
 terminus drush $SITE_ENV -- config-export -y
-
+terminus drush $SITE_ENV -- cache-rebuild
 # terminus drush $SITE_ENV -- migrate-upgrade --legacy-db-key=drupal_7 --configure-only  --legacy-root=$PANTHEON_D7_URL
-terminus drush $SITE_ENV -- migrate-upgrade --legacy-db-url=$D7_MYSQL_URL --configure-only  --legacy-db-key=drupal_7 --legacy-root=$PANTHEON_D7_URL
+terminus drush $SITE_ENV -- migrate-upgrade --legacy-db-url=$D7_MYSQL_URL --configure-only  --legacy-db-key=migrate --legacy-root=$PANTHEON_D7_URL
 # These cache rebuilds might not be necessary but I have seen odd errors
 # related to migration registration go away after cache-rebuild.
-terminus drush $SITE_ENV -- cache-rebuild
+# terminus drush $SITE_ENV -- cache-rebuild
 terminus drush $SITE_ENV -- config-export -y
 terminus drush $SITE_ENV -- cache-rebuild
 
