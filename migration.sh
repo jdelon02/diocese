@@ -36,6 +36,8 @@ terminus drush $SITE_ENV -- migrate-upgrade --configure-only --legacy-db-key=upg
 terminus drush $SITE_ENV -- config-export -y
 terminus drush $SITE_ENV -- cache-rebuild
 
+terminus drush $SITE_ENV -- migrate-status
+
 #terminus site code diffstat
 # @todo commit the code change. But there seems to be a multidev bug preventing
 # Terminus from seeing the code change. Terminus will only report a code change
