@@ -27,7 +27,7 @@ terminus drush $SITE_ENV -- config-export -y
 terminus drush $SITE_ENV -- cache-rebuild
 
 export D7_MYSQL_URL=$(terminus connection:info $PANTHEON_D7_SITE.$PANTHEON_D7_BRANCH --field=mysql_url)
-terminus drush $SITE_ENV -- migrate-upgrade --configure-only --legacy-db-key=drupal_7 --legacy-db-url=$D7_MYSQL_URL --legacy-root=$PANTHEON_D7_URL
+terminus drush $SITE_ENV -- migrate-upgrade --configure-only --legacy-db-key=upgrade --legacy-root=$PANTHEON_D7_URL
 # terminus drush $SITE_ENV -- migrate-upgrade --legacy-db-url=$D7_MYSQL_URL --configure-only  --legacy-db-key=migrate --legacy-root=$PANTHEON_D7_URL
 
 # These cache rebuilds might not be necessary but I have seen odd errors
