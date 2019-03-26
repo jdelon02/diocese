@@ -20,18 +20,20 @@ if (!empty($secrets['migrate_source_db__url'])) {
     echo $parsed_url['host'] . PHP_EOL;
     echo $parsed_url['pass'] . PHP_EOL;
     if (!empty($parsed_url['port']) && !empty($parsed_url['host']) && !empty($parsed_url['pass'])) {
-        $databases['migrate']['default'] = array (
-        'database' => 'pantheon',
-        'username' => 'pantheon',
-        'password' => $parsed_url['pass'],
-        'host' => $parsed_url['host'],
-        'port' => $parsed_url['port'],
-        'driver' => 'mysql',
-        'prefix' => '',
-        );
-    }
+      $databases['upgrade']['default'] = array (
+      'database' => 'pantheon',
+      'username' => 'pantheon',
+      'password' => $parsed_url['pass'],
+      'host' => $parsed_url['host'],
+      'port' => $parsed_url['port'],
+      'driver' => 'mysql',
+      'prefix' => '',
+      );
 
-    var_dump($databases['migrate']['default']);
+      $databases['migrate']['default'] = $databases['upgrade']['default'];
+      $databases['drupal_7']['default'] = $databases['upgrade']['default'];
+    }
+    var_dump($databases);
 }
 
 // {"migrate_source_db__url":"mysql:\/\/pantheon:9a1a60f331604f279e94d3bda21937c2
