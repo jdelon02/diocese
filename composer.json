@@ -134,10 +134,7 @@
                 "web.config"
             ]
         },
-        "patches": {
-            "drupal/migrate_upgrade": {
-                "Add --legacy-db-key parameter to drush migrate-update": "https://www.drupal.org/files/issues/legacy-db-key-2751151-2.patch" }
-        }
+        "patches": {}
     },
     "config": {
         "optimize-autoloader": true,
