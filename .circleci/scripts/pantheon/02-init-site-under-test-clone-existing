@@ -22,6 +22,6 @@ terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" cr
 
 # If exported configuration is available, then import it.
 # This throws errors right now - JDD
-if [ -f "config/system.site.yml" ] ; then
-  terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- config-import --yes
-fi
+# if [ -f "config/system.site.yml" ] ; then
+#   terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- config-import --yes
+# fi
