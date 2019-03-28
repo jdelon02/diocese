@@ -35,6 +35,3 @@ if (!empty($secrets['migrate_source_db__url'])) {
     }
     var_dump($databases);
 }
-
-// {"migrate_source_db__url":"mysql:\/\/pantheon:9a1a60f331604f279e94d3bda21937c2
-//   @dbserver.migratetest.7ce3eed7-0b1c-40fc-bd90-3a8ecbbd391f.drush.in:24359\/pantheon"}
