@@ -3,9 +3,9 @@ name: 'The Episcopal Diocese of Newark'
 mail: episcopalhouse@dioceseofnewark.org
 slogan: 'The Episcopal Church in Northern New Jersey'
 page:
-  403: /node/5038
-  404: /node/1051
-  front: /node/5038
+  403: ''
+  404: ''
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
