@@ -136,8 +136,10 @@ process:
           source: value
   field_event_loc_fill_in:
     -
-      plugin: get
-      source: field_event_loc_fill_in
+      plugin: geofield_latlon
+          source:
+            - lat
+            - lon
   field_event_loc_select:
     -
       plugin: get
