@@ -1,0 +1,15 @@
+uuid: f1e7e16b-0ac9-4ddd-890e-9a7105b70f65
+langcode: en
+status: true
+dependencies: {  }
+name: homepage_slideshow
+label: 'Homepage Slideshow'
+effects:
+  1c9734f9-177c-4c91-9976-6948b5fef1ab:
+    uuid: 1c9734f9-177c-4c91-9976-6948b5fef1ab
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1290
+      height: 400
+      anchor: center-center

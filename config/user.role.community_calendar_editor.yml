@@ -1,0 +1,14 @@
+uuid: d7619e5e-1bd2-4681-8ae5-a74167efabed
+langcode: en
+status: true
+dependencies: {  }
+id: community_calendar_editor
+label: 'community calendar editor'
+weight: 1
+is_admin: null
+permissions:
+  - 'create event_community content'
+  - 'delete own event_community content'
+  - 'edit own event_community content'
+  - 'schedule publishing of nodes'
+  - 'view date repeats'

@@ -1,0 +1,14 @@
+uuid: aee26433-cf32-4851-9810-26ae7d21bba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.story_editor
+  module:
+    - user
+id: user_remove_role_action.story_editor
+label: 'Remove the story editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: story_editor

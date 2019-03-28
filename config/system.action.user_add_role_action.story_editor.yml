@@ -1,0 +1,14 @@
+uuid: 7733312f-1e07-424f-8b19-89b4b5d76b2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.story_editor
+  module:
+    - user
+id: user_add_role_action.story_editor
+label: 'Add the story editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: story_editor

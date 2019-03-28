@@ -1,0 +1,9 @@
+uuid: 7b103f0d-f2c2-4b7b-8eae-6142209e83aa
+langcode: en
+status: true
+dependencies: {  }
+name: Forums
+vid: forums
+description: 'Forum navigation vocabulary'
+hierarchy: 1
+weight: -10

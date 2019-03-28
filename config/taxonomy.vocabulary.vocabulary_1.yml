@@ -1,0 +1,9 @@
+uuid: 3c803cdd-1080-406d-9b22-5dc2057b6b52
+langcode: en
+status: true
+dependencies: {  }
+name: Pages
+vid: vocabulary_1
+description: 'Tags identifying specific website pages.'
+hierarchy: 0
+weight: 0

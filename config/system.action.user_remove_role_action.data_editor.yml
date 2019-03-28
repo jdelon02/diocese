@@ -1,0 +1,14 @@
+uuid: 92d2ab30-8d6d-47c4-9731-b1b86d39c704
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.data_editor
+  module:
+    - user
+id: user_remove_role_action.data_editor
+label: 'Remove the data editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: data_editor

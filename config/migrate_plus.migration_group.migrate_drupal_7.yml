@@ -18,13 +18,3 @@ shared_configuration:
     port: 24359
     database: pantheon
     prefix: null
-  source:
-    key: upgrade
-  database:
-    driver: mysql
-    username: pantheon
-    password: 9a1a60f331604f279e94d3bda21937c2
-    host: dbserver.migratetest.7ce3eed7-0b1c-40fc-bd90-3a8ecbbd391f.drush.in
-    port: 24359
-    database: pantheon
-    prefix: null

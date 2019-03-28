@@ -1,0 +1,14 @@
+uuid: 4577df4b-fd8a-4080-a5a9-2c3572eec744
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.page_editor
+  module:
+    - user
+id: user_remove_role_action.page_editor
+label: 'Remove the page editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: page_editor

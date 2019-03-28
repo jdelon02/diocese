@@ -1,0 +1,12 @@
+features:
+  name: 0
+  slogan: 0
+  node_user_picture: 0
+  comment_user_picture: 0
+  favicon: 1
+logo:
+  use_default: 1
+  path: sites/default/files/logo.png
+favicon:
+  use_default: 1
+  path: sites/default/files/favicon.ico

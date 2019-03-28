@@ -1,0 +1,9 @@
+uuid: 701da1a1-aba2-4473-a8de-a2feaa13cbcd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Listing Tags'
+vid: vocabulary_6
+description: 'The Resource Listing Tags control on which page(s) a resource is listed. Resources can be tagged with multiple categories.'
+hierarchy: 1
+weight: 0

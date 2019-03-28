@@ -1,0 +1,14 @@
+uuid: b91b4797-241a-45ab-8dee-faebdff826f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.resource_editor
+  module:
+    - user
+id: user_add_role_action.resource_editor
+label: 'Add the resource editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: resource_editor

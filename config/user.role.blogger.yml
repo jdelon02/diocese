@@ -1,0 +1,18 @@
+uuid: dd979933-9c5d-4388-ae4b-f0888a0baad5
+langcode: en
+status: true
+dependencies: {  }
+id: blogger
+label: blogger
+weight: 0
+is_admin: null
+permissions:
+  - 'access ckeditor'
+  - 'create blog content'
+  - 'delete own blog content'
+  - 'edit own blog content'
+  - 'override blog authored on option'
+  - 'override blog published option'
+  - 'schedule publishing of nodes'
+  - 'use text format 1'
+  - 'use text format 4'
