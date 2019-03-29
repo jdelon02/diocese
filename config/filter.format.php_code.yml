@@ -1,19 +1,15 @@
-uuid: 1df139f2-aa56-478f-9a5f-afc0cd37bca9
+uuid: 08d43499-27c6-42cf-93ab-25bfc1f775b5
 langcode: en
 status: true
 dependencies:
   module:
     - php
+_core:
+  default_config_hash: xwUOj7cXz8VE1JG4Yn8qnm-qp4X0lOoKxfnHRS2i46E
 name: 'PHP code'
-format: '7'
-weight: 0
+format: php_code
+weight: 11
 filters:
-  filter_null:
-    id: filter_null
-    provider: filter
-    status: true
-    weight: 0
-    settings: {  }
   php_code:
     id: php_code
     provider: php

@@ -33,4 +33,5 @@ permissions:
   - 'skip comment approval'
   - 'use text format 1'
   - 'use text format 2'
+  - 'view media'
   - 'view own unpublished content'

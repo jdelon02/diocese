@@ -23,5 +23,4 @@ filters:
     provider: filter
     status: true
     weight: 1
-    settings:
-      filter_url_length: 72
+    settings: {  }

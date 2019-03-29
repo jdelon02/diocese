@@ -49,6 +49,7 @@
         "drupal/taxonomy_manager": "^1.0",
         "drupal/token": "^1.5",
         "drupal/twig_tweak": "^2.1",
+        "drupal/video": "^1.4",
         "drupal/views_slideshow": "^4.6",
         "drupal/viewsreference": "^1.4",
         "drupal/webform": "^5.1",

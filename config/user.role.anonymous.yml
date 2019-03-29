@@ -18,3 +18,4 @@ permissions:
   - 'search content'
   - 'use text format 1'
   - 'use text format 6'
+  - 'view media'
