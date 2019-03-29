@@ -1,0 +1,94 @@
+uuid: f533049c-2a5c-47de-a4e0-22deb227cfd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_church.default
+    - field.field.node.church.body
+    - field.field.node.church.comment_node_church
+    - field.field.node.church.field_church_attributes
+    - field.field.node.church.field_clergy_transition_position
+    - field.field.node.church.field_clergy_transition_step
+    - field.field.node.church.field_county
+    - field.field.node.church.field_district
+    - field.field.node.church.field_main_image
+    - field.field.node.church.field_organization_type
+    - field.field.node.church.field_resource_attachment
+    - field.field.node.church.field_website
+    - node.type.church
+  module:
+    - comment
+    - image
+    - link
+    - options
+    - text
+    - user
+id: node.church.default
+targetEntityType: node
+bundle: church
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_church:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_county:
+    label: inline
+    weight: 4
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_district:
+    label: inline
+    weight: 5
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_website:
+    label: hidden
+    weight: 2
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_church_attributes: true
+  field_clergy_transition_position: true
+  field_clergy_transition_step: true
+  field_organization_type: true
+  field_resource_attachment: true

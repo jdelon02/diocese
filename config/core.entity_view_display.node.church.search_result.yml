@@ -1,0 +1,84 @@
+uuid: dbd84f5f-e209-4c2f-9d62-ade7b2c4b97e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.church.body
+    - field.field.node.church.comment_node_church
+    - node.type.church
+  module:
+    - user
+id: node.church.search_result
+targetEntityType: node
+bundle: church
+mode: search_result
+content:
+  field_church_attributes:
+    label: above
+    weight: 2
+    type: text_hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_clergy_transition_position:
+    label: above
+    weight: 11
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_clergy_transition_step:
+    label: above
+    weight: 12
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_county:
+    label: inline
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_district:
+    label: inline
+    weight: 1
+    type: number_integer
+    settings:
+      - {  }
+      - .
+      - {  }
+      - true
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: -4
+    type: story-teaser_linked
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_resource_attachment:
+    label: above
+    weight: 14
+    type: file_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_website:
+    label: hidden
+    weight: -2
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_church: true

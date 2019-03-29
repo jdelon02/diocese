@@ -1,0 +1,33 @@
+uuid: e13300c6-f621-4b67-9ca4-68b722a28723
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_photo
+    - node.type.story
+  module:
+    - image
+id: node.story.field_gallery_photo
+field_name: field_gallery_photo
+entity_type: node
+bundle: story
+label: 'Gallery Photos'
+description: 'Use the Gallery Photo field to upload an unlimited number of images to display in a lightbox photo gallery.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images
+  max_filesize: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: true
+  title_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

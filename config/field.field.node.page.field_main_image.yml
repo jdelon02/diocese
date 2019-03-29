@@ -1,0 +1,38 @@
+uuid: c5639e10-52d9-4c08-86c1-d9f32abf4b5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_image
+    - node.type.page
+  module:
+    - image
+id: node.page.field_main_image
+field_name: field_main_image
+entity_type: node
+bundle: page
+label: 'Main Image'
+description: 'Image must be at least 1290 x 400 pixels. Horizontal images are preferred.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

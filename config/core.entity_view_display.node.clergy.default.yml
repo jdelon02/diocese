@@ -1,0 +1,73 @@
+uuid: 55cde1a3-14dd-4364-ad7d-8cb4a44cbc30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_clergy.default
+    - field.field.node.clergy.body
+    - field.field.node.clergy.comment_node_clergy
+    - field.field.node.clergy.field_clergy_attributes
+    - field.field.node.clergy.field_clergy_position
+    - field.field.node.clergy.field_headshot
+    - field.field.node.clergy.field_name
+    - field.field.node.clergy.field_person_type
+    - node.type.clergy
+  module:
+    - comment
+    - image
+    - text
+    - user
+id: node.clergy.default
+targetEntityType: node
+bundle: clergy
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_clergy:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_clergy_position:
+    label: inline
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_headshot:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_name:
+    label: inline
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_clergy_attributes: true
+  field_person_type: true

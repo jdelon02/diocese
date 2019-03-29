@@ -1,0 +1,21 @@
+uuid: 4b782c79-dc06-4a29-958b-9f381feec6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_1
+    - node.type.page
+id: node.page.taxonomy_vocabulary_1
+field_name: taxonomy_vocabulary_1
+entity_type: node
+bundle: page
+label: Pages
+description: 'Indicate whether this item is associated with a specific page. (Select "Announcements" to display it on the Diocesan Administration page.) Hold down the Ctrl or Shift key to select more than one page tag.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

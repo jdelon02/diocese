@@ -1,0 +1,23 @@
+uuid: ae39a8e4-85fc-4b05-bc88-b948a09ebf1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_announcement
+    - node.type.story
+  module:
+    - options
+id: node.story.field_announcement
+field_name: field_announcement
+entity_type: node
+bundle: story
+label: Announcement
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

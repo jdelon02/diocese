@@ -1,0 +1,22 @@
+uuid: 2675908f-0cfc-42c7-9d43-431463fc36b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.event
+  module:
+    - text
+id: node.event.body
+field_name: body
+entity_type: node
+bundle: event
+label: Body
+description: 'An <i>event</i> contains who/what/where/when information, and appears in the calendar and optionally on the front page and/or related pages.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

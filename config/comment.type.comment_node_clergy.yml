@@ -1,0 +1,8 @@
+uuid: 360b98e4-b86f-41a6-9dac-70108129cf26
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_clergy
+label: 'Clergy (rename to Person after content migration) comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,18 @@
+uuid: f83967ba-facd-4ce3-b855-0e6f09ea9738
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: Resource
+type: resource
+description: 'Downloadable resources, including at least one PDF or Word file with a description, plus an optional image.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

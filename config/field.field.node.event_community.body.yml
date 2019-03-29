@@ -1,0 +1,22 @@
+uuid: c4d756db-8227-46c8-90bf-f20b293b8321
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.event_community
+  module:
+    - text
+id: node.event_community.body
+field_name: body
+entity_type: node
+bundle: event_community
+label: 'Event Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

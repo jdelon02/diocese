@@ -1,0 +1,161 @@
+uuid: f7c34d1c-70db-4d50-ae67-162136edab99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.church.body
+    - field.field.node.church.comment_node_church
+    - field.field.node.church.field_church_attributes
+    - field.field.node.church.field_clergy_transition_position
+    - field.field.node.church.field_clergy_transition_step
+    - field.field.node.church.field_county
+    - field.field.node.church.field_district
+    - field.field.node.church.field_main_image
+    - field.field.node.church.field_organization_type
+    - field.field.node.church.field_resource_attachment
+    - field.field.node.church.field_website
+    - image.style.thumbnail
+    - node.type.church
+  module:
+    - comment
+    - file
+    - image
+    - link
+    - path
+    - text
+id: node.church.default
+targetEntityType: node
+bundle: church
+mode: default
+content:
+  body:
+    weight: 3
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  comment_node_church:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_church_attributes:
+    weight: 5
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_clergy_transition_position:
+    weight: 11
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_clergy_transition_step:
+    weight: 12
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_county:
+    weight: 3
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_district:
+    weight: 4
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    weight: 2
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_organization_type:
+    weight: 1
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resource_attachment:
+    weight: 14
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_website:
+    weight: 2
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

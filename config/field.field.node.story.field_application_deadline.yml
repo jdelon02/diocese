@@ -1,0 +1,21 @@
+uuid: 2cccbb7e-d768-4539-a3a3-2d470eba8d55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application_deadline
+    - node.type.story
+  module:
+    - datetime
+id: node.story.field_application_deadline
+field_name: field_application_deadline
+entity_type: node
+bundle: story
+label: 'Application deadline'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

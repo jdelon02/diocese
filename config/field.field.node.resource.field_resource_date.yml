@@ -1,0 +1,21 @@
+uuid: 3beb39a7-95b0-45cb-8290-677cbed6e4ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_date
+    - node.type.resource
+  module:
+    - datetime
+id: node.resource.field_resource_date
+field_name: field_resource_date
+entity_type: node
+bundle: resource
+label: 'Resource Date'
+description: "The date associated with this resource; used for sorting and expiration purposes.\r\nConvention resource: convention date.\r\nDiocesan Cycle of Prayer: date of last day covered.\r\nFinancial statement: period ending date.\r\nLiturgical resource: commemoration date.\r\nDiocesan Council, Standing Committee or Trustees minutes: meeting date."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

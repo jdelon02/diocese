@@ -1,0 +1,108 @@
+uuid: 1f26f5db-8d11-4971-89c7-5970e53b1ea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.event.body
+    - field.field.node.event.comment_node_event
+    - node.type.event
+  module:
+    - text
+    - user
+id: node.event.search_result
+targetEntityType: node
+bundle: event
+mode: search_result
+content:
+  body:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ddblock_expiration:
+    label: inline
+    weight: 9
+    type: datetime_default
+    settings:
+      - show
+      - {  }
+      - {  }
+      - {  }
+      - both
+      - medium
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_event_attachment:
+    label: hidden
+    weight: 7
+    type: file_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_date_time:
+    label: hidden
+    weight: 3
+    type: datetime_default
+    settings:
+      - show
+      - {  }
+      - {  }
+      - {  }
+      - both
+      - long
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_external_link:
+    label: hidden
+    weight: 8
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_include_ddblocks:
+    label: above
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: 2
+    type: story-teaser_linked
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slide_title:
+    label: above
+    weight: 8
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_1:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomyextra:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_event: true

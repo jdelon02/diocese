@@ -1,0 +1,20 @@
+uuid: d8a790f9-3022-49ca-bb02-6fc135f6a332
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_church
+field_name: comment_node_church
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_church
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: cbdc7057-a6d5-4e06-810c-707669e1410b
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_slide
+label: 'Slide comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,92 @@
+uuid: 5f992d28-560e-4828-a2d2-b506c9695958
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.resource.body
+    - field.field.node.resource.comment_node_resource
+    - node.type.resource
+  module:
+    - text
+    - user
+id: node.resource.teaser
+targetEntityType: node
+bundle: resource
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 15
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: 11
+    type: story-teaser_linked
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_resource_attachment:
+    label: above
+    weight: 14
+    type: file_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_resource_date:
+    label: inline
+    weight: 16
+    type: datetime_default
+    settings:
+      - show
+      - {  }
+      - {  }
+      - {  }
+      - both
+      - date_only_shortmonth_nodow
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_resource_type:
+    label: above
+    weight: 12
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sort_order:
+    label: inline
+    weight: 17
+    type: number_integer
+    settings:
+      - {  }
+      - .
+      - {  }
+      - true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomyextra:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_resource: true

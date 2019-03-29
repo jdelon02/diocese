@@ -1,0 +1,21 @@
+uuid: 6e5f678a-012a-4ea9-a232-1b7efc0ae5c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oversight
+    - node.type.staff
+  module:
+    - options
+id: node.staff.field_oversight
+field_name: field_oversight
+entity_type: node
+bundle: staff
+label: Oversight
+description: 'Check areas for which this staff member is the contact for questions or updates. Used to populate the "For questions" or "For updates" contact block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

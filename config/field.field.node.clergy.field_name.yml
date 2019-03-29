@@ -1,0 +1,22 @@
+uuid: 4cc95f41-a2ed-4a62-85b4-9d67d2d45e58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.clergy
+id: node.clergy.field_name
+field_name: field_name
+entity_type: node
+bundle: clergy
+label: Name
+description: 'Title followed by full name (examples: The Rev. John Smith, The Rt. Rev. Jane Doe)'
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_name][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

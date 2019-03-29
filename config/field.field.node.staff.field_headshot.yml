@@ -1,0 +1,33 @@
+uuid: 71fc6362-3123-48e0-9ad5-26573ddb8a73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headshot
+    - node.type.staff
+  module:
+    - image
+id: node.staff.field_headshot
+field_name: field_headshot
+entity_type: node
+bundle: staff
+label: Headshot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  max_filesize: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

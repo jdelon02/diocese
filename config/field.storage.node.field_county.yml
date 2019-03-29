@@ -1,0 +1,45 @@
+uuid: 5a69534c-4122-4c01-898e-0e81da70df09
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_county
+field_name: field_county
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Bergen
+      label: Bergen
+    -
+      value: Essex
+      label: Essex
+    -
+      value: Hudson
+      label: Hudson
+    -
+      value: Morris
+      label: Morris
+    -
+      value: Passaic
+      label: Passaic
+    -
+      value: Sussex
+      label: Sussex
+    -
+      value: Union
+      label: Union
+    -
+      value: Warren
+      label: Warren
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

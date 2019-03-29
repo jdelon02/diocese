@@ -1,0 +1,39 @@
+uuid: 9206c09b-97ed-4c72-ab7f-83a1027347ef
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_clergy_transition_step
+field_name: field_clergy_transition_step
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '1. Separation & Planning'
+    -
+      value: '2'
+      label: '2. Self Study'
+    -
+      value: '2.9'
+      label: '3. Discernment'
+    -
+      value: '3'
+      label: '3. Discernment / Receiving Names'
+    -
+      value: '3.1'
+      label: '3. Discernment / No Longer Receiving Names'
+    -
+      value: '4'
+      label: '4. Call to New Ministry'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

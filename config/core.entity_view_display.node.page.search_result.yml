@@ -1,0 +1,31 @@
+uuid: 21baddeb-3c6e-4b59-8773-b61b9aa973e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.page.body
+    - field.field.node.page.comment_node_page
+    - node.type.page
+  module:
+    - user
+id: node.page.search_result
+targetEntityType: node
+bundle: page
+mode: search_result
+content:
+  field_main_image:
+    label: hidden
+    weight: -4
+    type: story-teaser_linked
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_page: true

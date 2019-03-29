@@ -1,0 +1,21 @@
+uuid: c8ef8aa4-f1b3-420b-b544-d750546e5392
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomyextra
+    - node.type.story
+id: node.story.taxonomyextra
+field_name: taxonomyextra
+entity_type: node
+bundle: story
+label: 'Taxonomy upgrade extras'
+description: 'Debris left over after upgrade from Drupal 6'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

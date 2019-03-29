@@ -1,0 +1,38 @@
+uuid: 7916fdc2-c8af-43c0-a522-a59ad9a5ff9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.webform.body
+    - field.field.node.webform.comment_node_webform
+    - node.type.webform
+  module:
+    - user
+id: node.webform.search_result
+targetEntityType: node
+bundle: webform
+mode: search_result
+content:
+  field_kicker:
+    label: above
+    weight: -4
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: -3
+    type: story-teaser_linked
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_webform: true

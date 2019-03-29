@@ -1,0 +1,22 @@
+uuid: 2368ee9f-bea3-41f2-a00c-a7f470c80bae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.church
+  module:
+    - text
+id: node.church.body
+field_name: body
+entity_type: node
+bundle: church
+label: Body
+description: 'Information about churches, to be used for directory listings and event locations.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

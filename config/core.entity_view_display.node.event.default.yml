@@ -1,0 +1,106 @@
+uuid: 4e224b55-2916-4cff-b2f0-8fd2dff3f9aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_event.default
+    - field.field.node.event.body
+    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_ddblock_expiration
+    - field.field.node.event.field_deadline
+    - field.field.node.event.field_event_attachment
+    - field.field.node.event.field_event_date_time
+    - field.field.node.event.field_external_link
+    - field.field.node.event.field_include_ddblocks
+    - field.field.node.event.field_main_image
+    - field.field.node.event.field_slide_title
+    - field.field.node.event.taxonomy_vocabulary_1
+    - field.field.node.event.taxonomyextra
+    - node.type.event
+  module:
+    - comment
+    - datetime
+    - file
+    - image
+    - link
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 17
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_event:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_deadline:
+    label: above
+    weight: 18
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_event_attachment:
+    label: above
+    weight: 20
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_event_date_time:
+    label: hidden
+    weight: 16
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_external_link:
+    label: hidden
+    weight: 19
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: 1
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ddblock_expiration: true
+  field_include_ddblocks: true
+  field_slide_title: true
+  taxonomy_vocabulary_1: true
+  taxonomyextra: true

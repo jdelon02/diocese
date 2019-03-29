@@ -1,0 +1,36 @@
+uuid: f2521c25-f3e5-4950-be2e-ee1d39844aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.media.body
+    - field.field.node.media.comment_node_media
+    - field.field.node.media.field_background_image
+    - field.field.node.media.field_main_image
+    - node.type.media
+  module:
+    - text
+    - user
+id: node.media.teaser
+targetEntityType: node
+bundle: media
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_media: true
+  field_background_image: true
+  field_main_image: true

@@ -1,0 +1,38 @@
+uuid: 93f7da87-8771-49f0-9fc3-60d3b14a6bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headshot
+    - node.type.clergy
+  module:
+    - image
+id: node.clergy.field_headshot
+field_name: field_headshot
+entity_type: node
+bundle: clergy
+label: Headshot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

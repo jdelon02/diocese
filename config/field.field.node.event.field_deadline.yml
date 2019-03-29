@@ -1,0 +1,21 @@
+uuid: c52b20c7-2cb9-4361-b2be-a431e4ee5d87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deadline
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_deadline
+field_name: field_deadline
+entity_type: node
+bundle: event
+label: Deadline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,37 @@
+uuid: bf3b8011-3f56-4a93-b028-0cd80770c535
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.page.body
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.field_main_image
+    - field.field.node.page.taxonomy_vocabulary_1
+    - node.type.page
+  module:
+    - image
+    - user
+id: node.page.search_index
+targetEntityType: node
+bundle: page
+mode: search_index
+content:
+  field_main_image:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_page: true
+  taxonomy_vocabulary_1: true

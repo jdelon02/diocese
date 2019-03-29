@@ -1,0 +1,45 @@
+uuid: bd359bf2-e53e-41ae-800f-34acde2fbb5b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_blog_type
+field_name: field_blog_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bishops-vlog
+      label: 'Bishop''s Vlog'
+    -
+      value: geeks
+      label: Geeks
+    -
+      value: meditations
+      label: Meditations
+    -
+      value: youth
+      label: Youth
+    -
+      value: bishops-blog
+      label: 'Bishop''s Blog (NIU)'
+    -
+      value: canons-blog
+      label: 'Canon''s Blog (NIU)'
+    -
+      value: GC2015
+      label: 'General Convention 2015 (NIU)'
+    -
+      value: GC2012
+      label: 'General Convention 2012 (NIU)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

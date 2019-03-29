@@ -1,0 +1,27 @@
+uuid: 32700bd4-dc25-4d10-8a68-4e2ce02f64bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_attachment
+    - node.type.event_community
+  module:
+    - file
+id: node.event_community.field_event_attachment
+field_name: field_event_attachment
+entity_type: node
+bundle: event_community
+label: Attachment(s)
+description: 'Use for flyers, registrations forms or other PDF(s) related to this event.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

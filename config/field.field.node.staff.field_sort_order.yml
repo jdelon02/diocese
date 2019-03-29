@@ -1,0 +1,26 @@
+uuid: c3dc30c8-ba87-4bc0-9c17-84cb47328977
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_order
+    - node.type.staff
+id: node.staff.field_sort_order
+field_name: field_sort_order
+entity_type: node
+bundle: staff
+label: 'Sort Order'
+description: 'Set an ascending sort order for items that can''t be sorted on other fields.'
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+    _error_element: 'default_value_widget][field_sort_order][0][value'
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

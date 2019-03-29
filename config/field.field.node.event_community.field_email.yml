@@ -1,0 +1,19 @@
+uuid: b0f1b05c-03f3-48a6-b04b-9c4af06d85f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.event_community
+id: node.event_community.field_email
+field_name: field_email
+entity_type: node
+bundle: event_community
+label: Email
+description: 'You must enter your email so that we can notify you about the status of this event listing. Your email will NOT display on the website. Thank you.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

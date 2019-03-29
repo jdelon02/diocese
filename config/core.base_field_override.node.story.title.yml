@@ -1,0 +1,18 @@
+uuid: b024d1db-917c-4cde-8280-3cb4704b3f5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.story
+id: node.story.title
+field_name: title
+entity_type: node
+bundle: story
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,101 @@
+uuid: 229a0dd1-e72f-4c3e-a9ac-d549cbe7b347
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_staff.default
+    - field.field.node.staff.body
+    - field.field.node.staff.comment_node_staff
+    - field.field.node.staff.field_email
+    - field.field.node.staff.field_fax
+    - field.field.node.staff.field_headshot
+    - field.field.node.staff.field_job_title
+    - field.field.node.staff.field_name
+    - field.field.node.staff.field_oversight
+    - field.field.node.staff.field_person_type
+    - field.field.node.staff.field_phone
+    - field.field.node.staff.field_sort_order
+    - field.field.node.staff.taxonomyextra
+    - node.type.staff
+  module:
+    - comment
+    - image
+    - text
+    - user
+id: node.staff.default
+targetEntityType: node
+bundle: staff
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_staff:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_email:
+    label: hidden
+    weight: 3
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fax:
+    label: inline
+    weight: 5
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_headshot:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      - medium
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_job_title:
+    label: hidden
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_name:
+    label: inline
+    weight: -3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    label: inline
+    weight: 4
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_oversight: true
+  field_person_type: true
+  field_sort_order: true
+  taxonomyextra: true

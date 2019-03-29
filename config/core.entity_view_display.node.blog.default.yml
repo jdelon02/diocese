@@ -1,0 +1,83 @@
+uuid: 7fc3e3ba-8016-46fb-bb71-681cd3a2888d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_blog.default
+    - field.field.node.blog.body
+    - field.field.node.blog.comment_node_blog
+    - field.field.node.blog.field_blog_type
+    - field.field.node.blog.field_ddblock_expiration
+    - field.field.node.blog.field_gallery_photo
+    - field.field.node.blog.field_include_ddblocks
+    - field.field.node.blog.field_kicker
+    - field.field.node.blog.field_main_image
+    - field.field.node.blog.field_slide_title
+    - field.field.node.blog.taxonomy_vocabulary_1
+    - field.field.node.blog.taxonomy_vocabulary_4
+    - field.field.node.blog.taxonomyextra
+    - node.type.blog
+  module:
+    - colorbox
+    - comment
+    - image
+    - text
+    - user
+id: node.blog.default
+targetEntityType: node
+bundle: blog
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_blog:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_gallery_photo:
+    label: hidden
+    weight: 16
+    type: colorbox
+    settings:
+      colorbox_node_style: ''
+      colorbox_node_style_first: ''
+      colorbox_image_style: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_blog_type: true
+  field_ddblock_expiration: true
+  field_include_ddblocks: true
+  field_kicker: true
+  field_slide_title: true
+  taxonomy_vocabulary_1: true
+  taxonomy_vocabulary_4: true
+  taxonomyextra: true

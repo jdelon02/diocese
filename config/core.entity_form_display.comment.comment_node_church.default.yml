@@ -1,0 +1,36 @@
+uuid: cfdf2f51-16c9-45cb-b40c-47385f1dff3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_church
+    - field.field.comment.comment_node_church.comment_body
+  module:
+    - text
+id: comment.comment_node_church.default
+targetEntityType: comment
+bundle: comment_node_church
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

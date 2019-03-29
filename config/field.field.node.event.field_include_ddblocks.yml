@@ -1,0 +1,23 @@
+uuid: cf970147-cb32-4b44-be30-61758c1cc7fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_include_ddblocks
+    - node.type.event
+  module:
+    - options
+id: node.event.field_include_ddblocks
+field_name: field_include_ddblocks
+entity_type: node
+bundle: event
+label: 'Featured Event'
+description: 'Indicate whether this event is to be featured on any of the pages listed above.'
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: list_string

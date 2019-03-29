@@ -1,0 +1,21 @@
+uuid: 4970e30b-940e-4287-800e-6b19df93156f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organization_type
+    - node.type.church
+id: node.church.field_organization_type
+field_name: field_organization_type
+entity_type: node
+bundle: church
+label: 'Organization Type'
+description: 'Accepted values: churches, locations, organizations'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

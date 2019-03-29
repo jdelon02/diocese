@@ -1,0 +1,22 @@
+uuid: 2789ce36-6dea-41cb-adf7-25b476209c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kicker
+    - node.type.story
+id: node.story.field_kicker
+field_name: field_kicker
+entity_type: node
+bundle: story
+label: Kicker
+description: 'A small headline that appears above the main headline in story lists, i.e. Bishop Beckwith''s Blog, Canon Jacobs'' Blog, In the News, Feature, Video, Photos.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_kicker][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

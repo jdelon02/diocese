@@ -1,0 +1,23 @@
+uuid: b9ac78d4-b60b-489c-89b3-2077f9ad2145
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_link
+    - node.type.event
+  module:
+    - link
+id: node.event.field_external_link
+field_name: field_external_link
+entity_type: node
+bundle: event
+label: Link
+description: 'A link to an external web page which will open in a new window. The title should start with "Go to" and end with ">>".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,46 @@
+uuid: fb91f7ed-28aa-4a54-a5bd-ad0a0547000e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.webform.body
+    - field.field.node.webform.comment_node_webform
+    - field.field.node.webform.field_kicker
+    - field.field.node.webform.field_main_image
+    - field.field.node.webform.taxonomy_vocabulary_1
+    - node.type.webform
+  module:
+    - image
+    - user
+id: node.webform.search_index
+targetEntityType: node
+bundle: webform
+mode: search_index
+content:
+  field_kicker:
+    label: above
+    weight: -4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: -3
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_webform: true
+  taxonomy_vocabulary_1: true

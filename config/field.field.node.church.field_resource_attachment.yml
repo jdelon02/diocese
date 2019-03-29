@@ -1,0 +1,27 @@
+uuid: 97aea51c-5ba8-452a-ae71-44bbcf60c85c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_attachment
+    - node.type.church
+  module:
+    - file
+id: node.church.field_resource_attachment
+field_name: field_resource_attachment
+entity_type: node
+bundle: church
+label: Attachment
+description: 'Upload a file in PDF format.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: resources
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

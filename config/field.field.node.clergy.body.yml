@@ -1,0 +1,22 @@
+uuid: c8470678-97af-43d1-ab37-666c5a0dfbe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.clergy
+  module:
+    - text
+id: node.clergy.body
+field_name: body
+entity_type: node
+bundle: clergy
+label: 'Contact & Other Information'
+description: 'Clergy in the Diocese of Newark'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
