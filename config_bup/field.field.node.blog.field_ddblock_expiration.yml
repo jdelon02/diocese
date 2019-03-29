@@ -1,0 +1,21 @@
+uuid: b85b649c-2f8f-4a0d-a208-2b0a0c15672d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ddblock_expiration
+    - node.type.blog
+  module:
+    - datetime
+id: node.blog.field_ddblock_expiration
+field_name: field_ddblock_expiration
+entity_type: node
+bundle: blog
+label: 'Featured Expiration'
+description: 'Enter the date the item is to be removed from the featured display. Default is 30 days.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,21 @@
+uuid: b6c37aee-e949-4156-9bdc-e3a97374a0da
+langcode: en
+status: true
+dependencies: {  }
+id: story_editor
+label: 'story editor'
+weight: 0
+is_admin: null
+permissions:
+  - 'access ckeditor'
+  - 'clone node'
+  - 'create job_listing content'
+  - 'create story content'
+  - 'delete own job_listing content'
+  - 'delete own story content'
+  - 'edit any job_listing content'
+  - 'edit any story content'
+  - 'edit own job_listing content'
+  - 'edit own story content'
+  - 'override story authored on option'
+  - 'use text format 1'

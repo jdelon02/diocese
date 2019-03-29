@@ -1,0 +1,8 @@
+uuid: 845f385c-0c79-48ff-b806-d0f763c04399
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_church
+label: 'Organization comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,61 @@
+uuid: 06a37fb1-ed6d-47f2-b73a-12411a7633d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_media.default
+    - field.field.node.media.body
+    - field.field.node.media.comment_node_media
+    - field.field.node.media.field_background_image
+    - field.field.node.media.field_main_image
+    - node.type.media
+  module:
+    - comment
+    - image
+    - text
+    - user
+id: node.media.default
+targetEntityType: node
+bundle: media
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_media:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_background_image:
+    label: above
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: above
+    weight: 3
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

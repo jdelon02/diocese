@@ -1,0 +1,60 @@
+uuid: b2a22422-3380-4a9f-8129-2f1b6ef47fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.clergy.body
+    - field.field.node.clergy.comment_node_clergy
+    - node.type.clergy
+  module:
+    - text
+    - user
+id: node.clergy.teaser
+targetEntityType: node
+bundle: clergy
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 2
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_clergy_attributes:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_clergy_position:
+    label: inline
+    weight: -1
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_headshot:
+    label: hidden
+    weight: -4
+    type: headshot-teaser_linked
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_name:
+    label: inline
+    weight: -3
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_clergy: true

@@ -1,0 +1,8 @@
+uuid: ab8308d2-d20a-429c-94da-ffc2602e4992
+langcode: en
+status: true
+dependencies: {  }
+id: menu-news-menu
+label: 'News Menu'
+description: 'A customized menu for News-related pages.'
+locked: false

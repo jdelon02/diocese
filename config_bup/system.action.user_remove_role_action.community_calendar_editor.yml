@@ -1,0 +1,14 @@
+uuid: 080547ca-c2fe-4712-a5c3-31770d4e2121
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.community_calendar_editor
+  module:
+    - user
+id: user_remove_role_action.community_calendar_editor
+label: 'Remove the community calendar editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: community_calendar_editor

@@ -1,0 +1,21 @@
+uuid: 7a3ba25d-b23e-460a-a961-ebb9a2409b96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_1
+    - node.type.blog
+id: node.blog.taxonomy_vocabulary_1
+field_name: taxonomy_vocabulary_1
+entity_type: node
+bundle: blog
+label: Pages
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

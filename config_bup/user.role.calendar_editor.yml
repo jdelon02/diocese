@@ -1,0 +1,23 @@
+uuid: 337c2dd4-320c-446c-a936-2d540c5956dd
+langcode: en
+status: true
+dependencies: {  }
+id: calendar_editor
+label: 'calendar editor'
+weight: 0
+is_admin: null
+permissions:
+  - 'access ckeditor'
+  - 'clone node'
+  - 'create deadline content'
+  - 'create event content'
+  - 'create event_location content'
+  - 'delete own deadline content'
+  - 'delete own event content'
+  - 'delete own event_location content'
+  - 'edit any deadline content'
+  - 'edit any event content'
+  - 'edit any event_location content'
+  - 'override event authored on option'
+  - 'use text format 1'
+  - 'view date repeats'

@@ -1,0 +1,21 @@
+uuid: 6000d89f-e9a8-47c6-9814-eeb8fceeacd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_6
+    - node.type.resource
+id: node.resource.taxonomy_vocabulary_6
+field_name: taxonomy_vocabulary_6
+entity_type: node
+bundle: resource
+label: 'Resource Listing Tags'
+description: 'The Resource Listing Tags control on which page(s) a resource is listed. Resources can be tagged with multiple categories.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

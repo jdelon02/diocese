@@ -1,0 +1,9 @@
+uuid: b8e00fa8-2487-4b02-b3c8-10402f1d20d6
+langcode: en
+status: true
+dependencies: {  }
+name: Publications
+vid: vocabulary_3
+description: 'Articles from The VOICE Online and Leadership News e-newsletters, and The VOICE print edition by issue.'
+hierarchy: 0
+weight: 1

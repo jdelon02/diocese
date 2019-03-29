@@ -1,0 +1,27 @@
+uuid: f4dcb549-0391-4b52-b9bb-8974ec94a9ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_clergy
+    - field.field.comment.comment_node_clergy.comment_body
+  module:
+    - text
+id: comment.comment_node_clergy.default
+targetEntityType: comment
+bundle: comment_node_clergy
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

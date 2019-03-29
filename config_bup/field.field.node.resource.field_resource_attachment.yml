@@ -1,0 +1,27 @@
+uuid: 6655068a-bee0-4e88-ae09-80b9745bef0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_attachment
+    - node.type.resource
+  module:
+    - file
+id: node.resource.field_resource_attachment
+field_name: field_resource_attachment
+entity_type: node
+bundle: resource
+label: Attachment(s)
+description: 'Upload a file in PDF, JPG, MS Word DOC/DOCX or MS Excel XLS/XLSX format.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: resources
+  file_extensions: 'pdf jpg doc docx xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,14 @@
+uuid: eb3f7010-aa6e-4176-acd3-029945bd9dc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.community_calendar_editor
+  module:
+    - user
+id: user_add_role_action.community_calendar_editor
+label: 'Add the community calendar editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: community_calendar_editor

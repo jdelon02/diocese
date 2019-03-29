@@ -1,0 +1,18 @@
+uuid: aece03bb-ca41-4c06-a378-5e04dc53c77f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.clergy
+id: node.clergy.title
+field_name: title
+entity_type: node
+bundle: clergy
+label: 'Display Name & Title (last name first)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

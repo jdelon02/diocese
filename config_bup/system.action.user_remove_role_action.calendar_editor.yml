@@ -1,0 +1,14 @@
+uuid: 20c4bcc5-3a5f-499f-8cb3-6e9e67836539
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.calendar_editor
+  module:
+    - user
+id: user_remove_role_action.calendar_editor
+label: 'Remove the calendar editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: calendar_editor

@@ -1,0 +1,18 @@
+uuid: 4edee790-61dd-4331-8af8-6d933dd1862b
+langcode: en
+status: true
+dependencies: {  }
+id: resource_editor
+label: 'resource editor'
+weight: 0
+is_admin: null
+permissions:
+  - 'access ckeditor'
+  - 'clone node'
+  - 'create resource content'
+  - 'delete own resource content'
+  - 'edit any resource content'
+  - 'edit own resource content'
+  - 'override resource authored on option'
+  - 'override resource published option'
+  - 'use text format 1'

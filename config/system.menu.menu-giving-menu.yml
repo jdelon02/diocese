@@ -1,0 +1,8 @@
+uuid: de026929-b633-4271-b63f-0a564a163b2d
+langcode: en
+status: true
+dependencies: {  }
+id: menu-giving-menu
+label: 'Giving Menu'
+description: 'A customized menu for Giving-related pages.'
+locked: false

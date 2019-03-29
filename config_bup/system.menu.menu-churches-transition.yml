@@ -1,0 +1,8 @@
+uuid: 68980456-bc2e-4b38-85b4-dcf914b1cb06
+langcode: en
+status: true
+dependencies: {  }
+id: menu-churches-transition
+label: 'Churches in Transition Menu'
+description: 'A customized menu for the Churches in Transition pages.'
+locked: false

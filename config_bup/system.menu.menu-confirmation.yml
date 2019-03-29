@@ -1,0 +1,8 @@
+uuid: 23c32534-6337-4a5b-97e4-f2041f71ecc3
+langcode: en
+status: true
+dependencies: {  }
+id: menu-confirmation
+label: 'Confirmation Menu'
+description: 'A customized menu for the Confirmation Retreats and Confirmation Services pages.'
+locked: false

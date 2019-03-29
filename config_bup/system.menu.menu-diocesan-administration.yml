@@ -1,0 +1,8 @@
+uuid: 47c7c905-6a32-4360-a200-3163bd157374
+langcode: en
+status: true
+dependencies: {  }
+id: menu-diocesan-administration
+label: 'Governance Menu'
+description: 'A customized menu for Governance-related pages.'
+locked: false

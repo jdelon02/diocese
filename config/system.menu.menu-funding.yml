@@ -1,0 +1,8 @@
+uuid: b7a3f78c-cc96-4b25-b2fe-5478a96cb15c
+langcode: en
+status: true
+dependencies: {  }
+id: menu-funding
+label: 'Funding Menu'
+description: 'A customized menu for Funding-related pages'
+locked: false

@@ -1,0 +1,23 @@
+uuid: 93da2109-7e22-40c0-bfd5-f10e1619131b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clergy_attributes
+    - node.type.clergy
+  module:
+    - options
+id: node.clergy.field_clergy_attributes
+field_name: field_clergy_attributes
+entity_type: node
+bundle: clergy
+label: 'Clergy attributes'
+description: 'Indicate whether this clergy person 1) is available for supply, 2) should be omitted from the main Clergy Directory (usually selected if they are neither canonically resident nor parochial).'
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,14 @@
+uuid: 9de817d3-e3d3-4eb0-b380-97b4a69842eb
+langcode: en
+status: true
+dependencies: {  }
+id: page_editor
+label: 'page editor'
+weight: 0
+is_admin: null
+permissions:
+  - 'access ckeditor'
+  - 'create page content'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'use text format 1'

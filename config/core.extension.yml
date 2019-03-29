@@ -1,11 +1,14 @@
 module:
   address: 0
+  admin_toolbar: 0
+  adminimal_admin_toolbar: 0
   aggregator: 0
   automated_cron: 0
   bg_image_formatter: 0
   big_pipe: 0
   block: 0
   block_class: 0
+  block_content: 0
   breakpoint: 0
   ckeditor: 0
   color: 0
@@ -24,6 +27,8 @@ module:
   editor: 0
   entity_reference_revisions: 0
   field: 0
+  field_group: 0
+  field_group_migrate: 0
   field_ui: 0
   file: 0
   filefield_paths: 0
@@ -46,6 +51,7 @@ module:
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
+  module_filter: 0
   node: 0
   options: 0
   page_cache: 0

@@ -1,0 +1,27 @@
+uuid: 9324e31b-6d73-4f37-a948-080a2a717089
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_church
+    - field.field.comment.comment_node_church.comment_body
+  module:
+    - text
+id: comment.comment_node_church.default
+targetEntityType: comment
+bundle: comment_node_church
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

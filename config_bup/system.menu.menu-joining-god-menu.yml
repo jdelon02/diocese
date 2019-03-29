@@ -1,0 +1,8 @@
+uuid: 7bb60388-4fb8-4885-9851-48ca71d87de8
+langcode: en
+status: true
+dependencies: {  }
+id: menu-joining-god-menu
+label: 'Joining God Menu'
+description: 'A customized menu for pages related to Joining God in Shaping Our Future'
+locked: false

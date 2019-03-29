@@ -1,0 +1,86 @@
+uuid: 4a9e5002-5491-48a7-a31a-72d0adedee46
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.staff.body
+    - field.field.node.staff.comment_node_staff
+    - node.type.staff
+  module:
+    - user
+id: node.staff.token
+targetEntityType: node
+bundle: staff
+mode: token
+content:
+  field_email:
+    label: inline
+    weight: 1
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fax:
+    label: inline
+    weight: 0
+    type: default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_headshot:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_job_title:
+    label: inline
+    weight: -2
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_name:
+    label: inline
+    weight: -3
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_oversight:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    label: inline
+    weight: -1
+    type: default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sort_order:
+    label: inline
+    weight: 2
+    type: number_integer
+    settings:
+      - {  }
+      - .
+      - {  }
+      - true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_staff: true

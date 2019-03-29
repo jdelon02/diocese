@@ -1,0 +1,9 @@
+uuid: 01792717-0a85-4118-bcd6-d461d843d889
+langcode: en
+status: true
+dependencies: {  }
+name: Person
+vid: person
+description: ''
+hierarchy: 0
+weight: 0

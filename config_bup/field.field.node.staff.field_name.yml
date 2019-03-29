@@ -1,0 +1,22 @@
+uuid: 80934e25-eaa4-4d7a-b6fa-f113c2e9a343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.staff
+id: node.staff.field_name
+field_name: field_name
+entity_type: node
+bundle: staff
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_name][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

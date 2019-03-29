@@ -1,0 +1,53 @@
+uuid: a17b5bc3-e262-434c-a373-72261d30b942
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform.body
+    - field.field.node.webform.comment_node_webform
+    - node.type.webform
+  module:
+    - text
+    - user
+id: node.webform.teaser
+targetEntityType: node
+bundle: webform
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: -2
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_kicker:
+    label: above
+    weight: -4
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: -3
+    type: story-teaser_linked
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_1:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_webform: true

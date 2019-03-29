@@ -1,0 +1,141 @@
+uuid: 1603ed61-649d-4565-a311-21c90288a280
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_resource_type
+field_name: field_resource_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: resource
+      label: 'Resource (General)'
+    -
+      value: anti-racism
+      label: Anti-Racism
+    -
+      value: audits
+      label: Audits
+    -
+      value: bishop-search
+      label: 'Bishop Search'
+    -
+      value: bishop-office
+      label: 'Bishop''s Office'
+    -
+      value: canon-office
+      label: 'Canon''s Office'
+    -
+      value: cfc
+      label: 'Christian Formation'
+    -
+      value: churches-in-transition
+      label: 'Churches in Transition'
+    -
+      value: com
+      label: 'Commission on Ministry'
+    -
+      value: companion-diocese
+      label: 'Companion Diocese'
+    -
+      value: confirmation-retreats
+      label: 'Confirmation Retreats'
+    -
+      value: confirmation
+      label: 'Confirmation Services'
+    -
+      value: convention
+      label: Convention
+    -
+      value: deacons
+      label: Deacons
+    -
+      value: districts
+      label: Districts
+    -
+      value: council
+      label: 'Diocesan Council'
+    -
+      value: cycle-of-prayer
+      label: 'Diocesan Cycle of Prayer'
+    -
+      value: dit
+      label: 'Diocesan Investment Trust'
+    -
+      value: finance
+      label: Finance
+    -
+      value: flat-jesus
+      label: 'Flat Jesus'
+    -
+      value: funding
+      label: Funding
+    -
+      value: giving
+      label: Giving
+    -
+      value: hispanic-latino
+      label: 'Hispanic/Latino Ministry'
+    -
+      value: HR
+      label: HR
+    -
+      value: hr-policies
+      label: 'HR Policies'
+    -
+      value: joining-god
+      label: 'Joining God'
+    -
+      value: justice-board
+      label: 'Justice Board'
+    -
+      value: liturgical
+      label: 'Liturgical Resource'
+    -
+      value: missional
+      label: 'Missional Initiatives'
+    -
+      value: newark-acts
+      label: 'NEWARK ACTS'
+    -
+      value: property
+      label: Property
+    -
+      value: publications
+      label: Publications
+    -
+      value: safe-church-training
+      label: 'Safe Church Training'
+    -
+      value: seniors
+      label: 'Senior Ministries'
+    -
+      value: special-convention
+      label: 'Special Convention'
+    -
+      value: standing
+      label: 'Standing Committee'
+    -
+      value: stewardship
+      label: Stewardship
+    -
+      value: trustees
+      label: Trustees
+    -
+      value: vestry-u
+      label: 'Vestry University'
+    -
+      value: youth
+      label: Youth
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

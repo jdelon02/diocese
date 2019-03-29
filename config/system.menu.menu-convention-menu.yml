@@ -1,0 +1,8 @@
+uuid: 727b802a-ff39-4c1d-9aa4-ed604f8b6341
+langcode: en
+status: true
+dependencies: {  }
+id: menu-convention-menu
+label: 'Convention Menu'
+description: 'A customized menu for Convention-related pages.'
+locked: false

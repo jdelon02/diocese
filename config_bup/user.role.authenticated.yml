@@ -5,15 +5,33 @@ dependencies: {  }
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: 'Authenticated user'
-weight: 1
+label: 'authenticated user'
+weight: 0
 is_admin: false
 permissions:
+  - 'access ckeditor'
   - 'access comments'
   - 'access content'
-  - 'access shortcuts'
-  - 'access site-wide contact form'
+  - 'access news feeds'
+  - 'clone node'
+  - 'diff view changes'
+  - 'edit webform components'
+  - 'enter blog revision log entry'
+  - 'enter church revision log entry'
+  - 'enter clergy revision log entry'
+  - 'enter event revision log entry'
+  - 'enter event_location revision log entry'
+  - 'enter organization revision log entry'
+  - 'enter page revision log entry'
+  - 'enter staff revision log entry'
+  - 'enter story revision log entry'
+  - 'enter voice_pdf revision log entry'
+  - 'enter webform revision log entry'
+  - 'notify of path changes'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format basic_html'
+  - 'use text format 1'
+  - 'use text format 2'
+  - 'view media'
+  - 'view own unpublished content'

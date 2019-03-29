@@ -1,0 +1,23 @@
+uuid: 7b844ea0-fcff-4f3f-af44-4964376b8f58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_link
+    - node.type.event_community
+  module:
+    - link
+id: node.event_community.field_external_link
+field_name: field_external_link
+entity_type: node
+bundle: event_community
+label: Link
+description: 'A link to an external web page which will open in a new window.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

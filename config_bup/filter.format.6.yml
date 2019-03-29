@@ -1,0 +1,28 @@
+uuid: 84b78705-58fb-4c5f-9c63-117dd3d88385
+langcode: en
+status: true
+dependencies: {  }
+name: 'Safe HTML'
+format: '6'
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 2
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: 1
+    settings:
+      allowed_html: '<b> <strong> <i> <em> <p> <br /> <br>'
+      filter_html_help: true
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }

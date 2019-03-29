@@ -1,0 +1,8 @@
+uuid: 12b847a3-c41d-4395-9ea1-bf7a4bab1090
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_resource
+label: 'Resource comment'
+target_entity_type_id: node
+description: null

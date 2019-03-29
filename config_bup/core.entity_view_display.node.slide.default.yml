@@ -1,0 +1,42 @@
+uuid: 846a67b7-04b5-4e74-893b-5da8b7733323
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_slide.default
+    - field.field.node.slide.comment_node_slide
+    - field.field.node.slide.field_main_image
+    - node.type.slide
+  module:
+    - comment
+    - image
+    - user
+id: node.slide.default
+targetEntityType: node
+bundle: slide
+mode: default
+content:
+  comment_node_slide:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: above
+    weight: 1
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

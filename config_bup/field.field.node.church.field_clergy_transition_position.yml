@@ -1,0 +1,22 @@
+uuid: 8c3fd45d-59b0-434f-8594-bfe38cfa73db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clergy_transition_position
+    - node.type.church
+id: node.church.field_clergy_transition_position
+field_name: field_clergy_transition_position
+entity_type: node
+bundle: church
+label: Position
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_clergy_transition_position][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

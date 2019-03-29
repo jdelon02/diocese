@@ -1,0 +1,101 @@
+uuid: 25410062-73ed-42a0-ae91-ee4a8a4b69f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.staff.body
+    - field.field.node.staff.comment_node_staff
+    - node.type.staff
+  module:
+    - text
+    - user
+id: node.staff.teaser
+targetEntityType: node
+bundle: staff
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 4
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_email:
+    label: inline
+    weight: 1
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fax:
+    label: inline
+    weight: 0
+    type: default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_headshot:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_job_title:
+    label: inline
+    weight: -2
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_name:
+    label: inline
+    weight: -3
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_oversight:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    label: inline
+    weight: -1
+    type: default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sort_order:
+    label: inline
+    weight: 2
+    type: number_integer
+    settings:
+      - {  }
+      - .
+      - {  }
+      - true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomyextra:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_staff: true

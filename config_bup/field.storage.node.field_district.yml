@@ -1,0 +1,20 @@
+uuid: 5d3b5427-4b4f-4782-9499-a0033d81a5cd
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_district
+field_name: field_district
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

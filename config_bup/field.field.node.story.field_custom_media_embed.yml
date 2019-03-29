@@ -1,0 +1,21 @@
+uuid: 223c71be-9c69-4928-8f32-fd9c28e9b812
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_media_embed
+    - node.type.story
+  module:
+    - text
+id: node.story.field_custom_media_embed
+field_name: field_custom_media_embed
+entity_type: node
+bundle: story
+label: 'Custom Media Embed'
+description: 'Embed 3rd party videos by copy/pasting the embed code into this field. This field is optimized for 3rd party iframe video content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 13714c23-d961-487a-a677-043def71e33b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.staff
+  module:
+    - text
+id: node.staff.body
+field_name: body
+entity_type: node
+bundle: staff
+label: Body
+description: 'Diocesan staff contact information, used for the Staff Directory and on appropriate pages.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

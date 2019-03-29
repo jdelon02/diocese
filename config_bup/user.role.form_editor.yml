@@ -1,0 +1,20 @@
+uuid: 43cd7d96-3f5d-4b25-8256-4fef2d554f91
+langcode: en
+status: true
+dependencies: {  }
+id: form_editor
+label: 'form editor'
+weight: 0
+is_admin: null
+permissions:
+  - 'access all webform results'
+  - 'access ckeditor'
+  - 'access own webform results'
+  - 'access own webform submissions'
+  - 'create webform content'
+  - 'delete own webform content'
+  - 'edit all webform submissions'
+  - 'edit any webform content'
+  - 'edit own webform submissions'
+  - 'override webform authored on option'
+  - 'use text format 1'

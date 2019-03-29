@@ -1,0 +1,24 @@
+uuid: a7273031-0c6d-4169-bda7-2a1e9bd74d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fax
+    - node.type.staff
+  module:
+    - telephone
+id: node.staff.field_fax
+field_name: field_fax
+entity_type: node
+bundle: staff
+label: Fax
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_fax][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,22 @@
+uuid: 76d83088-daf2-401f-9ebd-121a1e823ce3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog
+  module:
+    - text
+id: node.blog.body
+field_name: body
+entity_type: node
+bundle: blog
+label: Body
+description: 'A <em>blog entry</em> is a single post to an online journal, or <em>blog</em>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

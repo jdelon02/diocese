@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.comment_node_page
     - node.type.page
   module:
     - text
@@ -18,13 +19,28 @@ mode: teaser
 content:
   body:
     label: hidden
+    weight: -2
     type: text_summary_or_trimmed
-    weight: 100
-    region: content
     settings:
       trim_length: 600
     third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: -4
+    type: default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 101
     region: content
-hidden: {  }
+  taxonomy_vocabulary_1:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_page: true

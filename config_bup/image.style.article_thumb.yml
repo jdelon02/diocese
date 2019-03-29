@@ -1,0 +1,15 @@
+uuid: fa20bfae-e93b-48e9-926e-398bec5a0986
+langcode: en
+status: true
+dependencies: {  }
+name: article_thumb
+label: 'Article Thumb'
+effects:
+  55b7554d-4f3f-48d5-a93b-1744f310915e:
+    uuid: 55b7554d-4f3f-48d5-a93b-1744f310915e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 542
+      anchor: center-center

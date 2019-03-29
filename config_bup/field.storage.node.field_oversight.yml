@@ -1,0 +1,114 @@
+uuid: 6fdd4d0e-df38-450a-b027-3ef67c5fbf64
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_oversight
+field_name: field_oversight
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Administrator
+      label: Administrator
+    -
+      value: 'Alleluia Fund'
+      label: 'Alleluia Fund'
+    -
+      value: Anti-Racism
+      label: Anti-Racism
+    -
+      value: 'Benefits Coordinator'
+      label: 'Benefits Coordinator'
+    -
+      value: Bishop
+      label: Bishop
+    -
+      value: 'Bishop''s Office'
+      label: 'Bishop''s Office'
+    -
+      value: 'Bishop Anand Center'
+      label: 'Bishop Anand Center'
+    -
+      value: Calendar
+      label: Calendar
+    -
+      value: Canon
+      label: Canon
+    -
+      value: CFO
+      label: CFO
+    -
+      value: 'Clergy Transition'
+      label: 'Clergy Transition'
+    -
+      value: Communications
+      label: Communications
+    -
+      value: 'Confirmation Retreats'
+      label: 'Confirmation Retreats'
+    -
+      value: 'Confirmation Services'
+      label: 'Confirmation Services'
+    -
+      value: Convention
+      label: Convention
+    -
+      value: 'Convention Exhibits'
+      label: 'Convention Exhibits'
+    -
+      value: 'DB Manager'
+      label: 'DB Manager'
+    -
+      value: Funding
+      label: Funding
+    -
+      value: Giving
+      label: Giving
+    -
+      value: 'HR Policies'
+      label: 'HR Policies'
+    -
+      value: 'Joining God'
+      label: 'Joining God in Shaping Our Future'
+    -
+      value: 'Mission Strategy'
+      label: 'Mission Strategy'
+    -
+      value: 'NEWARK ACTS'
+      label: 'NEWARK ACTS'
+    -
+      value: Property
+      label: Property
+    -
+      value: 'Resources / Training'
+      label: 'Resources / Training'
+    -
+      value: 'Safe Church'
+      label: 'Safe Church'
+    -
+      value: 'Senior Ministries'
+      label: 'Senior Ministries'
+    -
+      value: Stewardship
+      label: Stewardship
+    -
+      value: Technology
+      label: Technology
+    -
+      value: 'Vestry University'
+      label: 'Vestry University'
+    -
+      value: Youth
+      label: Youth
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

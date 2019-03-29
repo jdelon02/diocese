@@ -1,0 +1,18 @@
+uuid: 1ff37fba-daff-4748-b3da-1afe553f3efe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: Event
+type: event
+description: 'An <i>event</i> contains who/what/where/when information, and appears in the calendar and optionally on the front page and/or related pages.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

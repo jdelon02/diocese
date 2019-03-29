@@ -1,0 +1,87 @@
+uuid: 47950a6b-59b6-43aa-8e6b-d79294616f58
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.event.body
+    - field.field.node.event.comment_node_event
+    - node.type.event
+  module:
+    - user
+id: node.event.rss
+targetEntityType: node
+bundle: event
+mode: rss
+content:
+  field_ddblock_expiration:
+    label: inline
+    weight: 9
+    type: datetime_default
+    settings:
+      - show
+      - {  }
+      - {  }
+      - {  }
+      - both
+      - medium
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_event_attachment:
+    label: hidden
+    weight: 7
+    type: file_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_date_time:
+    label: hidden
+    weight: 3
+    type: datetime_default
+    settings:
+      - hide
+      - {  }
+      - {  }
+      - {  }
+      - both
+      - date_only_short_month
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_external_link:
+    label: hidden
+    weight: 8
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_include_ddblocks:
+    label: above
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: 2
+    type: story-illustration_linked
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slide_title:
+    label: above
+    weight: 8
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_event: true

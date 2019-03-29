@@ -1,0 +1,9 @@
+uuid: bcbc7a14-d040-4d66-90b3-c166edf9f351
+langcode: en
+status: true
+dependencies: {  }
+name: 'Blog Tags'
+vid: vocabulary_4
+description: ''
+hierarchy: 0
+weight: 0

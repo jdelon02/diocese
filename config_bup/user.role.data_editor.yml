@@ -1,0 +1,27 @@
+uuid: ab4871e6-2e81-452b-bfe8-d40a0d6cbecd
+langcode: en
+status: true
+dependencies: {  }
+id: data_editor
+label: 'data editor'
+weight: 0
+is_admin: null
+permissions:
+  - 'access ckeditor'
+  - 'create church content'
+  - 'create clergy content'
+  - 'create organization content'
+  - 'create staff content'
+  - 'delete own church content'
+  - 'delete own clergy content'
+  - 'delete own organization content'
+  - 'delete own staff content'
+  - 'edit any church content'
+  - 'edit any clergy content'
+  - 'edit any organization content'
+  - 'edit any staff content'
+  - 'edit own clergy content'
+  - 'override church authored on option'
+  - 'override church published option'
+  - 'override clergy published option'
+  - 'use text format 1'

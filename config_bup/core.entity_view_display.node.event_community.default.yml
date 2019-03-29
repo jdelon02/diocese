@@ -1,0 +1,98 @@
+uuid: 3224986e-b83e-4789-8afc-a2ad40e7aa53
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_event_community.default
+    - field.field.node.event_community.body
+    - field.field.node.event_community.comment_node_event_community
+    - field.field.node.event_community.field_deadline
+    - field.field.node.event_community.field_email
+    - field.field.node.event_community.field_event_attachment
+    - field.field.node.event_community.field_event_date_time
+    - field.field.node.event_community.field_external_link
+    - field.field.node.event_community.field_main_image
+    - node.type.event_community
+  module:
+    - comment
+    - datetime
+    - file
+    - image
+    - link
+    - text
+    - user
+id: node.event_community.default
+targetEntityType: node
+bundle: event_community
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 8
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_event_community:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_deadline:
+    label: inline
+    weight: 10
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_event_attachment:
+    label: above
+    weight: 12
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_event_date_time:
+    label: hidden
+    weight: 13
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_external_link:
+    label: hidden
+    weight: 11
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    label: hidden
+    weight: 11
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_email: true

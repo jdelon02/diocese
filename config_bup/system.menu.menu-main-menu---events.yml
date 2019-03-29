@@ -1,0 +1,8 @@
+uuid: 27899ed2-62a0-4bcd-8874-399e57f299fd
+langcode: en
+status: true
+dependencies: {  }
+id: menu-main-menu---events
+label: 'Main Menu - Events'
+description: ''
+locked: false

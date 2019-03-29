@@ -1,0 +1,15 @@
+uuid: 96e95695-fb00-499d-ada3-b06e23044d0f
+langcode: en
+status: true
+dependencies: {  }
+name: featured_interior_views
+label: 'Featured Interior Views'
+effects:
+  fa9bed94-51ea-4196-ac44-d57d9bfeb286:
+    uuid: fa9bed94-51ea-4196-ac44-d57d9bfeb286
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 450
+      anchor: center-center

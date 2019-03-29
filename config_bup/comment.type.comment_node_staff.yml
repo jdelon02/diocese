@@ -1,0 +1,8 @@
+uuid: 42c76962-d503-497e-9b07-2a46ad88b265
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_staff
+label: 'Staff (Move content into person then delete) comment'
+target_entity_type_id: node
+description: null

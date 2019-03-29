@@ -1,0 +1,15 @@
+uuid: 1658ba6d-5d00-4b56-9566-5f4b8e95edde
+langcode: en
+status: true
+dependencies: {  }
+name: event_page
+label: 'Event Page'
+effects:
+  cb4f32f5-1627-4529-b996-ecdab8fe7d50:
+    uuid: cb4f32f5-1627-4529-b996-ecdab8fe7d50
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

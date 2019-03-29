@@ -1,0 +1,44 @@
+uuid: db38025a-8baa-4518-b3e7-87263c5088da
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event_community.body
+    - field.field.node.event_community.comment_node_event_community
+    - field.field.node.event_community.field_deadline
+    - field.field.node.event_community.field_email
+    - field.field.node.event_community.field_event_attachment
+    - field.field.node.event_community.field_event_date_time
+    - field.field.node.event_community.field_external_link
+    - field.field.node.event_community.field_main_image
+    - node.type.event_community
+  module:
+    - text
+    - user
+id: node.event_community.teaser
+targetEntityType: node
+bundle: event_community
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_event_community: true
+  field_deadline: true
+  field_email: true
+  field_event_attachment: true
+  field_event_date_time: true
+  field_external_link: true
+  field_main_image: true

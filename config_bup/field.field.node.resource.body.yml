@@ -1,0 +1,22 @@
+uuid: 6b5ce90e-f3fc-4dd5-ad1e-de55807f9ad7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.resource
+  module:
+    - text
+id: node.resource.body
+field_name: body
+entity_type: node
+bundle: resource
+label: Description
+description: 'Downloadable resources, including at least one PDF or Word file with a description, plus an optional image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
