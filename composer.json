@@ -30,7 +30,6 @@
         "drupal/custom_formatters": "^3.0",
         "drupal/devel": "^2.0",
         "drupal/environment_indicator": "^3.5",
-        "drupal/field_group": "^3.0",
         "drupal/filefield_paths": "^1.0",
         "drupal/flexslider": "^2.0",
         "drupal/geolocation": "^1.11",
