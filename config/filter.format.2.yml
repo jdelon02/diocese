@@ -1,6 +1,6 @@
 uuid: 3ff4fc40-2529-4e24-8631-68234d91f4de
 langcode: en
-status: true
+status: false
 dependencies: {  }
 name: 'Full HTML'
 format: '2'

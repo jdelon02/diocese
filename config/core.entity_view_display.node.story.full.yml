@@ -1,9 +1,10 @@
-uuid: ddb661ce-9448-45e0-995c-e2a7cf0dbc02
+uuid: f78429ad-2aec-44c0-84ef-95b1b929ecd5
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment_node_story.default
+    - core.entity_view_mode.node.full
     - field.field.node.story.body
     - field.field.node.story.comment_node_story
     - field.field.node.story.field_announcement
@@ -23,7 +24,6 @@ dependencies:
     - field.field.node.story.field_story_type
     - field.field.node.story.taxonomy_vocabulary_1
     - field.field.node.story.taxonomyextra
-    - image.style.node_hero_image
     - node.type.story
   module:
     - colorbox
@@ -32,10 +32,10 @@ dependencies:
     - link
     - text
     - user
-id: node.story.default
+id: node.story.full
 targetEntityType: node
 bundle: story
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -91,7 +91,7 @@ content:
     weight: 2
     type: image
     settings:
-      image_style: node_hero_image
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     region: content

@@ -18,8 +18,9 @@ filters:
     status: true
     weight: 1
     settings:
-      allowed_html: '<b> <strong> <i> <em> <p> <br /> <br>'
+      allowed_html: '<b> <strong> <i> <em> <p> <br> <a href> <ul> <li> <ol> <blockquote> <img src alt data-entity-type data-entity-uuid>'
       filter_html_help: true
+      filter_html_nofollow: false
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
