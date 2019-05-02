@@ -10,6 +10,9 @@ module:
   block_class: 0
   block_content: 0
   breakpoint: 0
+  chosen: 0
+  chosen_field: 0
+  chosen_lib: 0
   ckeditor: 0
   color: 0
   colorbox: 0
@@ -26,11 +29,16 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
+  environment_indicator: 0
+  environment_indicator_ui: 0
   field: 0
   field_ui: 0
   file: 0
   filefield_paths: 0
   filter: 0
+  flexslider: 0
+  flexslider_fields: 0
+  flexslider_views: 0
   geolocation: 0
   geolocation_google_places_api: 0
   help: 0
@@ -38,6 +46,7 @@ module:
   image: 0
   image_url_formatter: 0
   imce: 0
+  insert_view: 0
   libraries: 0
   link: 0
   media: 0
@@ -57,9 +66,12 @@ module:
   php: 0
   quickedit: 0
   rdf: 0
+  responsive_bg_image_formatter: 0
+  responsive_image: 0
   search: 0
   shortcut: 0
   simple_block: 0
+  superfish: 0
   system: 0
   taxonomy: 0
   taxonomy_manager: 0
@@ -71,7 +83,10 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   menu_link_content: 1
   pathauto: 1
