@@ -2,6 +2,8 @@ uuid: 538ef263-af9e-44ea-8658-f38f1082290b
 langcode: en
 status: true
 dependencies:
+  module:
+    - forum
   theme:
     - seven
 id: adminimal_forum_active
@@ -11,9 +13,11 @@ weight: 5
 provider: null
 plugin: forum_active_block
 settings:
-  id: broken
+  id: forum_active_block
   label: ''
-  provider: core
+  provider: forum
   label_display: '0'
+  properties:
+    administrative: '1'
   block_count: 5
 visibility: {  }
