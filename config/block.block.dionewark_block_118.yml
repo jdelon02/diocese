@@ -1,0 +1,30 @@
+uuid: 73cf396c-a073-4bb2-aa89-66e792afa021
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:0e386103-0b84-485a-80c1-c44623beaad0'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_118
+theme: dionewark
+region: ''
+weight: -51
+provider: null
+plugin: 'block_content:0e386103-0b84-485a-80c1-c44623beaad0'
+settings:
+  id: 'block_content:0e386103-0b84-485a-80c1-c44623beaad0'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/content/senior-moments-*'

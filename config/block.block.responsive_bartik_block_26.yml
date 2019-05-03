@@ -1,0 +1,30 @@
+uuid: 1db6d3b9-c2d0-4343-9605-b218b4b44102
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:95f2fb72-f0b0-499d-99a5-76a9395ccef3'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_26
+theme: bartik
+region: content
+weight: 15
+provider: null
+plugin: 'block_content:95f2fb72-f0b0-499d-99a5-76a9395ccef3'
+settings:
+  id: 'block_content:95f2fb72-f0b0-499d-99a5-76a9395ccef3'
+  label: 'Other Resources'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /churches-transition-resources

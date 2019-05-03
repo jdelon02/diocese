@@ -1,0 +1,30 @@
+uuid: 5c1ef20b-437e-4a0a-9b3b-9f04f6497f19
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b5821ffb-2095-43f5-8c36-13207850b196'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_96
+theme: dionewark
+region: ''
+weight: -66
+provider: null
+plugin: 'block_content:b5821ffb-2095-43f5-8c36-13207850b196'
+settings:
+  id: 'block_content:b5821ffb-2095-43f5-8c36-13207850b196'
+  label: 'How to submit job listings'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /job-listings

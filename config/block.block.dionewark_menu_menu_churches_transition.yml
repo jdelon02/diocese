@@ -1,0 +1,28 @@
+uuid: f13ef434-656c-41a0-ad72-3c54bae267d5
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-churches-transition
+  module:
+    - system
+  theme:
+    - dionewark
+id: dionewark_menu_menu_churches_transition
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'system_menu_block:menu-churches-transition'
+settings:
+  id: 'system_menu_block:menu-churches-transition'
+  label: Transition
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/churches-transition*\n/clergy-agreements-policies"

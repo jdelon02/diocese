@@ -1,0 +1,30 @@
+uuid: f8d4a85f-05cd-4d4b-b84c-b1731dc2708f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c24d8a41-c5ce-43a1-a056-0f5ff2e0329f'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_128
+theme: dionewark
+region: ''
+weight: -71
+provider: null
+plugin: 'block_content:c24d8a41-c5ce-43a1-a056-0f5ff2e0329f'
+settings:
+  id: 'block_content:c24d8a41-c5ce-43a1-a056-0f5ff2e0329f'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/GC2015-blog\n/gc2015-blog\n/content/*general-convention*\n/content/episcopal-bishops-lead-anti-gun-violence-march-salt-lake-city"

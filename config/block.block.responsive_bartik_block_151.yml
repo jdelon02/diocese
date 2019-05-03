@@ -1,0 +1,30 @@
+uuid: 5703c5f7-c16f-4ce1-a13b-01c81056151b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b772b0d7-60e3-4cfd-91ad-c689ebeb0bca'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_151
+theme: bartik
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:b772b0d7-60e3-4cfd-91ad-c689ebeb0bca'
+settings:
+  id: 'block_content:b772b0d7-60e3-4cfd-91ad-c689ebeb0bca'
+  label: 'Diocesan Calendar'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\n/events*"

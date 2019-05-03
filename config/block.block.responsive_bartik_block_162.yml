@@ -1,0 +1,30 @@
+uuid: 1fdebd63-377d-43c3-ad31-90bdcdef1ae7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bd42b550-cce9-484a-950a-f4894cb719b6'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_162
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:bd42b550-cce9-484a-950a-f4894cb719b6'
+settings:
+  id: 'block_content:bd42b550-cce9-484a-950a-f4894cb719b6'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/convention\n/convention/elections\n/convention/registration-form-retired-non-parochial-clergy\n/form/registration-lay-deputies-and-alternates\n/form/convention-nominations"

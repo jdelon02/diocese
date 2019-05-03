@@ -1,0 +1,27 @@
+uuid: ddd554b7-e067-4455-ac25-2a7f9614569b
+langcode: en
+status: false
+dependencies:
+  module:
+    - aggregator
+    - system
+  theme:
+    - dionewark
+id: dionewark_aggregator_feed_1
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: aggregator_feed_block
+  label: 'Episcopal News Service Feed'
+  provider: aggregator
+  label_display: visible
+  block_count: 9
+  feed: '1'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /in-the-news

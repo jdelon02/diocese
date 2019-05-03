@@ -1,0 +1,30 @@
+uuid: 1d663389-7d00-47cf-b7ba-25227ee1407f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:747b09d1-7b33-4ea5-8f71-08798f7fa25f'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_58
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:747b09d1-7b33-4ea5-8f71-08798f7fa25f'
+settings:
+  id: 'block_content:747b09d1-7b33-4ea5-8f71-08798f7fa25f'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/GC2012-blog/*\n/gc2012-blog/*"

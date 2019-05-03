@@ -1,0 +1,30 @@
+uuid: bd07dfa2-010e-42f0-a32b-c950df710082
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ca3f0b29-e3ff-49f3-9ac5-1af2df7e64ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_126
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:ca3f0b29-e3ff-49f3-9ac5-1af2df7e64ff'
+settings:
+  id: 'block_content:ca3f0b29-e3ff-49f3-9ac5-1af2df7e64ff'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/geeks/*'

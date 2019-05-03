@@ -1,0 +1,30 @@
+uuid: 429aa315-959b-49f9-90f0-3d6df0e41bf4
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b6cb1c9f-b761-4cf4-baec-3663b81b4db0'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_95
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:b6cb1c9f-b761-4cf4-baec-3663b81b4db0'
+settings:
+  id: 'block_content:b6cb1c9f-b761-4cf4-baec-3663b81b4db0'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/event/clergy-conversation*'

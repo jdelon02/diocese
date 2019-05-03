@@ -1,0 +1,30 @@
+uuid: b1ab4b2a-aa70-4a97-8a31-3c5a3024c5ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6caa3ec3-c5aa-4c45-80e2-e4e7cdd08e1b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_161
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:6caa3ec3-c5aa-4c45-80e2-e4e7cdd08e1b'
+settings:
+  id: 'block_content:6caa3ec3-c5aa-4c45-80e2-e4e7cdd08e1b'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/bishops-vlog/*'

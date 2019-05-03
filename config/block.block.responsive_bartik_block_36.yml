@@ -1,0 +1,30 @@
+uuid: ce132129-1804-498a-b9ad-65a164acf96f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f20afb30-a525-459f-ab22-15733db73a4a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_36
+theme: bartik
+region: content
+weight: 35
+provider: null
+plugin: 'block_content:f20afb30-a525-459f-ab22-15733db73a4a'
+settings:
+  id: 'block_content:f20afb30-a525-459f-ab22-15733db73a4a'
+  label: 'Questions? Contact:'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/dit\n/dit/*"

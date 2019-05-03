@@ -1,0 +1,30 @@
+uuid: 4d122d7c-7dce-4a0e-800a-48fbe5766efe
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:45d78222-fa76-4dd4-921b-21142483ca31'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_103
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:45d78222-fa76-4dd4-921b-21142483ca31'
+settings:
+  id: 'block_content:45d78222-fa76-4dd4-921b-21142483ca31'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /geeks

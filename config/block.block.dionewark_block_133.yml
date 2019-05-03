@@ -1,0 +1,30 @@
+uuid: f6b69470-ca93-402e-8e6c-26d89b48ea4b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ae6523f5-b33d-4045-9aac-8ef51055d796'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_133
+theme: dionewark
+region: ''
+weight: -84
+provider: null
+plugin: 'block_content:ae6523f5-b33d-4045-9aac-8ef51055d796'
+settings:
+  id: 'block_content:ae6523f5-b33d-4045-9aac-8ef51055d796'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/funding/actsvim\n/funding/alleluia\n/funding/bcef\n/funding/eclf\n/funding/congregational-vitality\n/funding/wjh\n/content/first-bcef-call*\n/content/second-bcef-call*\n/content/third-bcef-call*\n/content/fourth-bcef-call*\n/content/fifth-bcef-call*"

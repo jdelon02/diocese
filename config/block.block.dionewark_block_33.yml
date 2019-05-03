@@ -1,0 +1,30 @@
+uuid: 3c983a36-073d-4745-88e9-ee6c23242629
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:719fb183-e9eb-4bd8-9ca2-032e4747d8c5'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_33
+theme: dionewark
+region: ''
+weight: -91
+provider: null
+plugin: 'block_content:719fb183-e9eb-4bd8-9ca2-032e4747d8c5'
+settings:
+  id: 'block_content:719fb183-e9eb-4bd8-9ca2-032e4747d8c5'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /staffing-survey

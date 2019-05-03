@@ -1,0 +1,30 @@
+uuid: 39ec9b0d-4927-4380-8f84-fc3138759d5f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1e3cd0fe-7451-4057-bde2-776d7b3f0546'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_108
+theme: bartik
+region: content
+weight: 37
+provider: null
+plugin: 'block_content:1e3cd0fe-7451-4057-bde2-776d7b3f0546'
+settings:
+  id: 'block_content:1e3cd0fe-7451-4057-bde2-776d7b3f0546'
+  label: 'Contact / Contacto:'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/hispanic-latino*'

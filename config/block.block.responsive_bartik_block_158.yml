@@ -1,0 +1,30 @@
+uuid: a20e0ed8-7d3d-4c36-b14e-79f4b9267d87
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3ce5e8fc-d3e3-4d26-8233-15be41c9f636'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_158
+theme: bartik
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:3ce5e8fc-d3e3-4d26-8233-15be41c9f636'
+settings:
+  id: 'block_content:3ce5e8fc-d3e3-4d26-8233-15be41c9f636'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/stewardship*'

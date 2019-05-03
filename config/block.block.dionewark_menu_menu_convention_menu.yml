@@ -1,0 +1,28 @@
+uuid: 0383c997-bb9e-4e3f-9c8a-00a9ece27ea8
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-convention-menu
+  module:
+    - system
+  theme:
+    - dionewark
+id: dionewark_menu_menu_convention_menu
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'system_menu_block:menu-convention-menu'
+settings:
+  id: 'system_menu_block:menu-convention-menu'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/convention\n/convention/*\n/form/*convention*"

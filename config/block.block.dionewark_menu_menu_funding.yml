@@ -1,0 +1,28 @@
+uuid: 4b4bbf0b-efcc-4d0c-b96a-75d157bc93e9
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-funding
+  module:
+    - system
+  theme:
+    - dionewark
+id: dionewark_menu_menu_funding
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'system_menu_block:menu-funding'
+settings:
+  id: 'system_menu_block:menu-funding'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/funding/*\n/content/first-bcef-call*\n/content/second-bcef-call*\n/content/third-bcef-call*\n/content/fourth-bcef-call*\n/content/fifth-bcef-call*\n/scholarships"

@@ -1,0 +1,30 @@
+uuid: 05828eae-8ada-42d0-a2be-c5071cc4a618
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:48f73398-af78-4821-a082-ed5741a4d20e'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_140
+theme: dionewark
+region: ''
+weight: -35
+provider: null
+plugin: 'block_content:48f73398-af78-4821-a082-ed5741a4d20e'
+settings:
+  id: 'block_content:48f73398-af78-4821-a082-ed5741a4d20e'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /event/40th-anniversary-bishop-spongs-consecration

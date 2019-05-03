@@ -1,0 +1,30 @@
+uuid: 111a4d7c-6ff7-48e9-913c-fc2a480d8d9f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:22564da0-f548-4fa8-8aed-a5c2b11957a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_106
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:22564da0-f548-4fa8-8aed-a5c2b11957a1'
+settings:
+  id: 'block_content:22564da0-f548-4fa8-8aed-a5c2b11957a1'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/event/episcopal-visitation*'

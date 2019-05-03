@@ -1,0 +1,25 @@
+uuid: 5841377c-a5b0-45ad-b91b-38d6436ce347
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - fusion_starter
+id: fusion_starter_user_login
+theme: fusion_starter
+region: ''
+weight: -10
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: '<none>'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /login

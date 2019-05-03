@@ -1,0 +1,30 @@
+uuid: b0702cd8-7e2e-488c-98ce-d80c13e6764e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f944be59-1e0a-4ba8-aacc-26168de1a9c4'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_111
+theme: dionewark
+region: ''
+weight: -52
+provider: null
+plugin: 'block_content:f944be59-1e0a-4ba8-aacc-26168de1a9c4'
+settings:
+  id: 'block_content:f944be59-1e0a-4ba8-aacc-26168de1a9c4'
+  label: 'Related Coverage'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /content/jersey-city-congregations-hold-stations-cross-sites-violent-crimes

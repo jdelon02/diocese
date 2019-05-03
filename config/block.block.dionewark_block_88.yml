@@ -1,0 +1,30 @@
+uuid: 3976b7de-ec2a-409f-8f1e-79ca80342485
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:50aab156-8744-4340-833a-e3054860d482'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_88
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:50aab156-8744-4340-833a-e3054860d482'
+settings:
+  id: 'block_content:50aab156-8744-4340-833a-e3054860d482'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/stewardship/*'

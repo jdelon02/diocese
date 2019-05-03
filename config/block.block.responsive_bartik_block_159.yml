@@ -1,0 +1,30 @@
+uuid: 3600c241-9a19-4336-9eee-922df61d2524
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7e79c984-2cd0-49e2-8dc7-a36ca5418132'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_159
+theme: bartik
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:7e79c984-2cd0-49e2-8dc7-a36ca5418132'
+settings:
+  id: 'block_content:7e79c984-2cd0-49e2-8dc7-a36ca5418132'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/dwelling*\n/joining-god\n/joining-god/*\n/joining-god-resources\n/congregational-journey*\n/clergy-journey*\n/organizational-journey*"

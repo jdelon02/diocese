@@ -1,0 +1,24 @@
+uuid: e35bb85d-ab5d-46fb-939e-f6026e7478b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-top-menu
+  module:
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_menu_menu_top_menu
+theme: bartik
+region: content
+weight: 1
+provider: null
+plugin: 'system_menu_block:menu-top-menu'
+settings:
+  id: 'system_menu_block:menu-top-menu'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

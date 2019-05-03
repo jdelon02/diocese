@@ -1,0 +1,30 @@
+uuid: e865a25b-49c9-4d9c-8f9b-ff80cb2e13f5
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ef9ae2f0-2ff8-471c-801d-429cf3d2a8c8'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_129
+theme: dionewark
+region: ''
+weight: -32
+provider: null
+plugin: 'block_content:ef9ae2f0-2ff8-471c-801d-429cf3d2a8c8'
+settings:
+  id: 'block_content:ef9ae2f0-2ff8-471c-801d-429cf3d2a8c8'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

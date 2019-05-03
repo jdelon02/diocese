@@ -1,0 +1,25 @@
+uuid: 703af796-f4a1-406d-9cda-4320a3ad45dd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7fce4975-29e9-4575-b309-05d6cb292456'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: responsive_bartik_block_142
+theme: bartik
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:7fce4975-29e9-4575-b309-05d6cb292456'
+settings:
+  id: 'block_content:7fce4975-29e9-4575-b309-05d6cb292456'
+  label: 'Latest Diocesan Headlines'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

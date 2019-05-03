@@ -1,0 +1,30 @@
+uuid: 20dd0691-fd0e-45bd-a240-d42cab647fbc
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:95b2e2e9-81ac-4ef3-9de2-403aa63f9ab9'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_44
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:95b2e2e9-81ac-4ef3-9de2-403aa63f9ab9'
+settings:
+  id: 'block_content:95b2e2e9-81ac-4ef3-9de2-403aa63f9ab9'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/seniors/*\n/form/hegg*\n/event/senior-ministries*"

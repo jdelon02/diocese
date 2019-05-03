@@ -1,0 +1,30 @@
+uuid: b0842fef-2940-447e-858b-a1da0025c1be
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:95f2fb72-f0b0-499d-99a5-76a9395ccef3'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_26
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:95f2fb72-f0b0-499d-99a5-76a9395ccef3'
+settings:
+  id: 'block_content:95f2fb72-f0b0-499d-99a5-76a9395ccef3'
+  label: 'Other Resources'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /churches-transition-resources

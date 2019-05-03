@@ -1,0 +1,30 @@
+uuid: 577daeed-b1a6-4cb7-ac0b-23588916aae3
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b9841e0d-db6c-4c5a-bf3b-5ea83df22e91'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_123
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:b9841e0d-db6c-4c5a-bf3b-5ea83df22e91'
+settings:
+  id: 'block_content:b9841e0d-db6c-4c5a-bf3b-5ea83df22e91'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/hispanic-latino/*'

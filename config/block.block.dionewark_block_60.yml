@@ -1,0 +1,30 @@
+uuid: 49d835cb-239f-4129-9045-3decc3d7004e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a22db474-9208-4f83-9b69-0c1f4a050fb5'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_60
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:a22db474-9208-4f83-9b69-0c1f4a050fb5'
+settings:
+  id: 'block_content:a22db474-9208-4f83-9b69-0c1f4a050fb5'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/safe-church-training/*'

@@ -1,0 +1,25 @@
+uuid: 3093c5f0-f103-4efc-ad51-0a9331a165d4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f430d96b-007a-461d-86b9-7a91a0a360eb'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: responsive_bartik_block_150
+theme: bartik
+region: content
+weight: 4
+provider: null
+plugin: 'block_content:f430d96b-007a-461d-86b9-7a91a0a360eb'
+settings:
+  id: 'block_content:f430d96b-007a-461d-86b9-7a91a0a360eb'
+  label: 'Get News & Meditations sent to your email'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

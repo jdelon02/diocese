@@ -1,0 +1,30 @@
+uuid: e3fe9b88-7e79-4d0b-bf1c-0dc61385dfbb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:559f1383-c68b-4584-bc98-c40e0fee99be'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_155
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:559f1383-c68b-4584-bc98-c40e0fee99be'
+settings:
+  id: 'block_content:559f1383-c68b-4584-bc98-c40e0fee99be'
+  label: 'Community Calendar'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /community-events

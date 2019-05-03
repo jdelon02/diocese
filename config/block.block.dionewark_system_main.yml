@@ -1,0 +1,20 @@
+uuid: 81dc29e1-25d9-4049-a58a-04cba447631f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - dionewark
+id: dionewark_system_main
+theme: dionewark
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: 40f18241-6aca-43b0-93be-d31f1d11bee9
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:26b2d2c7-581e-4fc8-9656-2e6a69418d00'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_50
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:26b2d2c7-581e-4fc8-9656-2e6a69418d00'
+settings:
+  id: 'block_content:26b2d2c7-581e-4fc8-9656-2e6a69418d00'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/resource/church-website-project*'

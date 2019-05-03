@@ -1,0 +1,37 @@
+uuid: e476d6e9-d2f8-407b-8b56-f3974755cbaf
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - dionewark
+id: dionewark_user_online
+theme: dionewark
+region: ''
+weight: -114
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '100'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/admin*\n/calendar*\n/confirmation-retreats\n/content*\n/form*\n/user*\n/staff\n/newark-acts-interns*\n/newark-acts-director*\n/bishops-blog*\n/canons-blog*\n/geeks*"

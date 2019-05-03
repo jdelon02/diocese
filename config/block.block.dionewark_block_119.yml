@@ -1,0 +1,30 @@
+uuid: 269857d8-4bda-45e7-9385-0513b4db457c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:eecc0313-3e2e-4bd4-859b-d7ebd1b4beb3'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_119
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:eecc0313-3e2e-4bd4-859b-d7ebd1b4beb3'
+settings:
+  id: 'block_content:eecc0313-3e2e-4bd4-859b-d7ebd1b4beb3'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/vestry-u/*'

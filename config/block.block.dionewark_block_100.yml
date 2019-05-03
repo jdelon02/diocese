@@ -1,0 +1,30 @@
+uuid: 0d035547-3bfe-42a6-81d5-9aa799792e92
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:575c1b79-f7e5-43d9-afaa-763d0e97f90c'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_100
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:575c1b79-f7e5-43d9-afaa-763d0e97f90c'
+settings:
+  id: 'block_content:575c1b79-f7e5-43d9-afaa-763d0e97f90c'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/justice-board/*'

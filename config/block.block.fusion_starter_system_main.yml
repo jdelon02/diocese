@@ -1,0 +1,20 @@
+uuid: 6e79d13a-5021-4aea-bfe8-be9014eb9cd5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - fusion_starter
+id: fusion_starter_system_main
+theme: fusion_starter
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

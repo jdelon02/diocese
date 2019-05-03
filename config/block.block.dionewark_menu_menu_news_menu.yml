@@ -1,0 +1,28 @@
+uuid: f4b75af7-2069-4473-bf8d-7dd56bd72085
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-news-menu
+  module:
+    - system
+  theme:
+    - dionewark
+id: dionewark_menu_menu_news_menu
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'system_menu_block:menu-news-menu'
+settings:
+  id: 'system_menu_block:menu-news-menu'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/announcements\n/archive/announcements\n/diocesan-listservs\n/e-news\n/in-the-news\n/job-listings\n/leadership-news\n/newark-email-list\n/publications/*\n/send-news\n/videos"

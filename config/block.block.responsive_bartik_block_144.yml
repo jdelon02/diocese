@@ -1,0 +1,25 @@
+uuid: 61d7c2a9-f605-4a61-948e-7011d834f1bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:335de2a9-7a5d-407b-a68b-05d2748be7e7'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: responsive_bartik_block_144
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:335de2a9-7a5d-407b-a68b-05d2748be7e7'
+settings:
+  id: 'block_content:335de2a9-7a5d-407b-a68b-05d2748be7e7'
+  label: 'The Episcopal Diocese of Newark is part of'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

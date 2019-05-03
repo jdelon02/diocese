@@ -1,0 +1,28 @@
+uuid: 3bee35db-e04c-4265-918c-d95cfa6f2e90
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-giving-menu
+  module:
+    - system
+  theme:
+    - dionewark
+id: dionewark_menu_menu_giving_menu
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'system_menu_block:menu-giving-menu'
+settings:
+  id: 'system_menu_block:menu-giving-menu'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/funding/bcef\n/funding/congregational-vitality\n/giving/*alleluia*\n/giving/diocesan-annual-fund"

@@ -1,0 +1,30 @@
+uuid: c49793b5-daf3-41d8-a546-a4821d84c35a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9367a383-0a53-40ef-9fae-7601c1ed823e'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_154
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:9367a383-0a53-40ef-9fae-7601c1ed823e'
+settings:
+  id: 'block_content:9367a383-0a53-40ef-9fae-7601c1ed823e'
+  label: 'Questions? Contact:'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bishop-search\n/bishop-transition"

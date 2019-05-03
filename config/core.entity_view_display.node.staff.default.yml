@@ -62,8 +62,8 @@ content:
     weight: 0
     type: image
     settings:
-      - medium
-      - {  }
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
     region: content
   field_job_title:

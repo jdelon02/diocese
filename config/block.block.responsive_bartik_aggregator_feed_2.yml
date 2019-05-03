@@ -1,0 +1,27 @@
+uuid: 228abaff-ac0e-4007-a0aa-1e9b9bdd111b
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_aggregator_feed_2
+theme: bartik
+region: content
+weight: 8
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: aggregator_feed_block
+  label: ''
+  provider: aggregator
+  label_display: '0'
+  block_count: 3
+  feed: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /gc2018

@@ -1,0 +1,30 @@
+uuid: 2e9a9952-67b9-4449-b409-18885107e0ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ca3f0b29-e3ff-49f3-9ac5-1af2df7e64ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_126
+theme: bartik
+region: content
+weight: 4
+provider: null
+plugin: 'block_content:ca3f0b29-e3ff-49f3-9ac5-1af2df7e64ff'
+settings:
+  id: 'block_content:ca3f0b29-e3ff-49f3-9ac5-1af2df7e64ff'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/geeks/*'

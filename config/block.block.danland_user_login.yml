@@ -1,0 +1,25 @@
+uuid: cf1fd30e-2431-4b8e-b293-4f32a88bec6d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - danland
+id: danland_user_login
+theme: danland
+region: ''
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: '<none>'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /login

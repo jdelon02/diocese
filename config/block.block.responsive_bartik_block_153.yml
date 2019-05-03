@@ -1,0 +1,30 @@
+uuid: 151d9bd4-4dee-4b8c-b065-868b5081811c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a7fddb73-cee6-4abb-9838-5f484dfd8813'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_153
+theme: bartik
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:a7fddb73-cee6-4abb-9838-5f484dfd8813'
+settings:
+  id: 'block_content:a7fddb73-cee6-4abb-9838-5f484dfd8813'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/meditations/*'

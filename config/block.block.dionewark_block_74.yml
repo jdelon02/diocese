@@ -1,0 +1,30 @@
+uuid: d3ca7682-2926-4547-b953-4d76b7cd4dbb
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:93e5c732-397a-41cf-ba3f-6c00577aa957'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_74
+theme: dionewark
+region: ''
+weight: -115
+provider: null
+plugin: 'block_content:93e5c732-397a-41cf-ba3f-6c00577aa957'
+settings:
+  id: 'block_content:93e5c732-397a-41cf-ba3f-6c00577aa957'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /hurricane-sandy-relief

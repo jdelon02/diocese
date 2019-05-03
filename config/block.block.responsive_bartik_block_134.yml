@@ -1,0 +1,30 @@
+uuid: 15ab17a3-ccaa-4492-83b8-5c4d79cdebf5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e35dda37-5962-4ea9-8a9c-fd8ebb357f97'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_134
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:e35dda37-5962-4ea9-8a9c-fd8ebb357f97'
+settings:
+  id: 'block_content:e35dda37-5962-4ea9-8a9c-fd8ebb357f97'
+  label: 'Online Meditations'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /meditations

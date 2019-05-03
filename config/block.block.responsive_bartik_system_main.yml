@@ -1,0 +1,22 @@
+uuid: beff4e34-dfdc-4364-bcb8-bd07db669979
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: responsive_bartik_system_main
+theme: bartik
+region: content
+weight: 5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

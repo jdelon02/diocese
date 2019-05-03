@@ -1,0 +1,30 @@
+uuid: 30e18902-507f-4c6c-9283-96af8e9e01f0
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e4bbeec1-a70e-47cf-85dc-d324b27454be'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_97
+theme: dionewark
+region: ''
+weight: -65
+provider: null
+plugin: 'block_content:e4bbeec1-a70e-47cf-85dc-d324b27454be'
+settings:
+  id: 'block_content:e4bbeec1-a70e-47cf-85dc-d324b27454be'
+  label: Disclaimer
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /job-listings

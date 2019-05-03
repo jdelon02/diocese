@@ -1,0 +1,32 @@
+uuid: 79ea949d-de7b-488b-945f-5e050337a785
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - user
+    - views
+  theme:
+    - seven
+id: adminimal_user_online
+theme: seven
+region: content
+weight: 4
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '100'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false

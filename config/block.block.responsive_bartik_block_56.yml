@@ -1,0 +1,30 @@
+uuid: aef24d50-a15c-4416-9152-d147f7c8a7a6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:eb576d22-fb8b-4c1f-9ed7-2dd01ef01159'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_56
+theme: bartik
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:eb576d22-fb8b-4c1f-9ed7-2dd01ef01159'
+settings:
+  id: 'block_content:eb576d22-fb8b-4c1f-9ed7-2dd01ef01159'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/canons-blog/*'

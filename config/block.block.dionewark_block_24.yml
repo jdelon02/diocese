@@ -1,0 +1,30 @@
+uuid: 9e0f31e9-6511-413a-a0c5-4ca194522a6c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:31903c23-f2ff-4a80-9d12-4f90c7e80e7b'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_24
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:31903c23-f2ff-4a80-9d12-4f90c7e80e7b'
+settings:
+  id: 'block_content:31903c23-f2ff-4a80-9d12-4f90c7e80e7b'
+  label: 'Compensation for Supply Clergy'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /supply-clergy

@@ -1,0 +1,30 @@
+uuid: 5948e3a3-7333-4391-909d-7675eed768b8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:eb576d22-fb8b-4c1f-9ed7-2dd01ef01159'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_56
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:eb576d22-fb8b-4c1f-9ed7-2dd01ef01159'
+settings:
+  id: 'block_content:eb576d22-fb8b-4c1f-9ed7-2dd01ef01159'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/canons-blog/*'

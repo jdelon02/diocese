@@ -1,0 +1,30 @@
+uuid: c733cc5f-9d04-47af-90f1-2dc19e385325
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:1a394382-b1a5-4aa3-b81f-731bcae1e94b'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_131
+theme: dionewark
+region: ''
+weight: -37
+provider: null
+plugin: 'block_content:1a394382-b1a5-4aa3-b81f-731bcae1e94b'
+settings:
+  id: 'block_content:1a394382-b1a5-4aa3-b81f-731bcae1e94b'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/content/grace-quest*'

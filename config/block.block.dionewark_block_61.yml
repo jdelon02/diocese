@@ -1,0 +1,30 @@
+uuid: 7b236715-7f69-40fe-bc12-f5c9c517a079
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6f7cd844-b871-414a-856a-fedde06a6b41'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_61
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:6f7cd844-b871-414a-856a-fedde06a6b41'
+settings:
+  id: 'block_content:6f7cd844-b871-414a-856a-fedde06a6b41'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/liturgical/*'

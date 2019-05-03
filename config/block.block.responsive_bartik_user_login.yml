@@ -1,0 +1,25 @@
+uuid: a84005cc-3f40-49c4-bb45-ec0cabc07734
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: responsive_bartik_user_login
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: '<none>'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /login

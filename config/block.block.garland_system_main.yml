@@ -1,0 +1,20 @@
+uuid: a31db0ec-0dcd-456f-80e5-27c64dd2f131
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - garland
+id: garland_system_main
+theme: garland
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

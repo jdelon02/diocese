@@ -23,7 +23,6 @@ dependencies:
     - field.field.node.story.field_story_type
     - field.field.node.story.taxonomy_vocabulary_1
     - field.field.node.story.taxonomyextra
-    - image.style.node_hero_image
     - node.type.story
   module:
     - colorbox
@@ -91,7 +90,7 @@ content:
     weight: 2
     type: image
     settings:
-      image_style: node_hero_image
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     region: content

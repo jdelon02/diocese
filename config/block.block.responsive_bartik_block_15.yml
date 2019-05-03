@@ -1,0 +1,30 @@
+uuid: 28fa6bdd-d910-450a-8415-bb4030537c3b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:407560a0-7459-463c-870b-2edec685431b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_15
+theme: bartik
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:407560a0-7459-463c-870b-2edec685431b'
+settings:
+  id: 'block_content:407560a0-7459-463c-870b-2edec685431b'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/bishops-blog/*'

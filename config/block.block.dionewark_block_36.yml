@@ -1,0 +1,30 @@
+uuid: c1992d1b-c8f3-42df-b8a3-3de1c064d4b8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f20afb30-a525-459f-ab22-15733db73a4a'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_36
+theme: dionewark
+region: ''
+weight: -89
+provider: null
+plugin: 'block_content:f20afb30-a525-459f-ab22-15733db73a4a'
+settings:
+  id: 'block_content:f20afb30-a525-459f-ab22-15733db73a4a'
+  label: 'Questions? Contact:'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/dit\n/dit/*"

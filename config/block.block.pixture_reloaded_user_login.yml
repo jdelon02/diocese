@@ -1,0 +1,25 @@
+uuid: 8fe6c784-87a2-46e4-b734-30530781b466
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - pixture_reloaded
+id: pixture_reloaded_user_login
+theme: pixture_reloaded
+region: ''
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: '<none>'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /login

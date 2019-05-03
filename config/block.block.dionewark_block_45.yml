@@ -1,0 +1,30 @@
+uuid: 6d3b0fe5-3f85-45cf-9daa-7413747ec319
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:40b807a8-0fd8-4946-a090-882e4df15f6e'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_45
+theme: dionewark
+region: ''
+weight: -83
+provider: null
+plugin: 'block_content:40b807a8-0fd8-4946-a090-882e4df15f6e'
+settings:
+  id: 'block_content:40b807a8-0fd8-4946-a090-882e4df15f6e'
+  label: 'About the Justice Board'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/form/justice-board-questionnaire-engaging-mission-children\n/content/dream-act-hope-immigrant-high-school-graduates-without-status\n/content/please-complete-justice-board-questionnaire-engaging-mission-children-april-30"

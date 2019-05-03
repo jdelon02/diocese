@@ -1,0 +1,30 @@
+uuid: 17c52b72-3f38-4669-bd0f-92dac50195bf
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:0fdb362c-f842-45b9-8c45-bca7f7c2fa16'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_49
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:0fdb362c-f842-45b9-8c45-bca7f7c2fa16'
+settings:
+  id: 'block_content:0fdb362c-f842-45b9-8c45-bca7f7c2fa16'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/missional/*'

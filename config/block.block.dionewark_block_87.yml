@@ -1,0 +1,30 @@
+uuid: ca67f22f-d929-4c05-bf75-63a0a28d0122
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e101492e-cd59-4a62-9cba-2e28d6d0beb6'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_87
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:e101492e-cd59-4a62-9cba-2e28d6d0beb6'
+settings:
+  id: 'block_content:e101492e-cd59-4a62-9cba-2e28d6d0beb6'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/audits/*'

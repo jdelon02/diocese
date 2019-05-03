@@ -1,0 +1,30 @@
+uuid: 3cdf6604-2f04-418c-856a-3f222edc44bf
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:1e3cd0fe-7451-4057-bde2-776d7b3f0546'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_108
+theme: dionewark
+region: ''
+weight: -56
+provider: null
+plugin: 'block_content:1e3cd0fe-7451-4057-bde2-776d7b3f0546'
+settings:
+  id: 'block_content:1e3cd0fe-7451-4057-bde2-776d7b3f0546'
+  label: 'Contact / Contacto:'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/hispanic-latino*'

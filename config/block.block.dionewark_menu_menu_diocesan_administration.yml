@@ -1,0 +1,28 @@
+uuid: f35eb9e5-ff74-4b39-a4a8-f669111e6dbe
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-diocesan-administration
+  module:
+    - system
+  theme:
+    - dionewark
+id: dionewark_menu_menu_diocesan_administration
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'system_menu_block:menu-diocesan-administration'
+settings:
+  id: 'system_menu_block:menu-diocesan-administration'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/archive/financial-statements\n/archive/minutes\n/council\n/council/*\n/districts\n/finance\n/finance/*\n/governance\n/standing-committee\n/trustees"

@@ -1,0 +1,30 @@
+uuid: ac7bcf49-24a6-4a28-843e-80a6d6118b24
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7e6b4766-bb8a-4f55-b634-03d875cd8a91'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_127
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:7e6b4766-bb8a-4f55-b634-03d875cd8a91'
+settings:
+  id: 'block_content:7e6b4766-bb8a-4f55-b634-03d875cd8a91'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/gc2015-blog/*'

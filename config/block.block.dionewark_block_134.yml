@@ -1,0 +1,30 @@
+uuid: 8ea0d9d1-ac70-46d6-86ac-87fa0865616a
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e35dda37-5962-4ea9-8a9c-fd8ebb357f97'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_134
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:e35dda37-5962-4ea9-8a9c-fd8ebb357f97'
+settings:
+  id: 'block_content:e35dda37-5962-4ea9-8a9c-fd8ebb357f97'
+  label: 'Online Meditations'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /meditations

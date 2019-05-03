@@ -1,0 +1,30 @@
+uuid: 5526fa95-76d8-4fc3-ad9f-b66b5df8a3ab
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f79318b0-2e3f-4941-b2e1-30682f778f12'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_42
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:f79318b0-2e3f-4941-b2e1-30682f778f12'
+settings:
+  id: 'block_content:f79318b0-2e3f-4941-b2e1-30682f778f12'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/deacons\n/deacons/*"

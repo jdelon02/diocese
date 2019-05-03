@@ -1,0 +1,25 @@
+uuid: 9752b48f-f0d8-449b-aa2d-b6863169c119
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - garland
+id: garland_user_login
+theme: garland
+region: ''
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: '<none>'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /login

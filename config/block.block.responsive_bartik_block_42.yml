@@ -1,0 +1,30 @@
+uuid: 06023116-3681-4da8-b8b8-f493c284d03b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f79318b0-2e3f-4941-b2e1-30682f778f12'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: responsive_bartik_block_42
+theme: bartik
+region: content
+weight: 33
+provider: null
+plugin: 'block_content:f79318b0-2e3f-4941-b2e1-30682f778f12'
+settings:
+  id: 'block_content:f79318b0-2e3f-4941-b2e1-30682f778f12'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/deacons\n/deacons/*"

@@ -1,0 +1,19 @@
+uuid: 538ef263-af9e-44ea-8658-f38f1082290b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+id: adminimal_forum_active
+theme: seven
+region: content
+weight: 5
+provider: null
+plugin: forum_active_block
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+  block_count: 5
+visibility: {  }

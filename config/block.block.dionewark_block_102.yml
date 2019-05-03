@@ -1,0 +1,30 @@
+uuid: 4d82d6be-a989-464a-b3dc-3fdf60e6c955
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f2d53abd-c5aa-467c-85ba-bb6c73a0d37c'
+  module:
+    - block_content
+    - system
+  theme:
+    - dionewark
+id: dionewark_block_102
+theme: dionewark
+region: ''
+weight: -117
+provider: null
+plugin: 'block_content:f2d53abd-c5aa-467c-85ba-bb6c73a0d37c'
+settings:
+  id: 'block_content:f2d53abd-c5aa-467c-85ba-bb6c73a0d37c'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/cycle-prayer/*'
