@@ -4,7 +4,7 @@
 # read by settings.migrate-on-pantheon.php
 
 # CHANGEABLES
-export SITE_ENV="diocese.dev"
+export SITE_ENV="diocese.ayoon"
 export PANTHEON_D7_SITE="diocesenewark"
 export PANTHEON_D7_BRANCH="migratetest"
 
